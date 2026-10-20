@@ -1,0 +1,416 @@
+[
+  {
+    "collection": "The Orbit Collection",
+    "credit": "NASA imagery · Azure AI Speech narration",
+    "audio_credit": "Azure AI Speech · en-US-AvaMultilingualNeural",
+    "duration": "12-second film",
+    "featured": false,
+    "id": "image-search",
+    "title": "A planet without a keyword",
+    "eyebrow": "01 / VISUAL DISCOVERY",
+    "description": "Find Earth among distant worlds using a description, not a filename.",
+    "story": "Four real NASA images. One natural-language query. Discover how a visual idea finds its place in an embedding space.",
+    "cover": "showcase/earth-cover.jpg",
+    "accent": "blue",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "mode": "search",
+    "query": "The blue planet Earth seen from space, with oceans and swirling white clouds.",
+    "suggestions": [
+      "A pale planet with rings and a moon in front of it.",
+      "An astronaut in a white spacesuit floating above Earth."
+    ],
+    "samples": [
+      {
+        "text": "",
+        "files": [
+          "showcase/earth.jpg"
+        ],
+        "label": "The blue marble"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/saturn.jpg"
+        ],
+        "label": "Saturn & Titan"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/pluto.jpg"
+        ],
+        "label": "Pluto in color"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/spacewalk.jpg"
+        ],
+        "label": "An untethered spacewalk"
+      }
+    ]
+  },
+  {
+    "collection": "The Orbit Collection",
+    "credit": "NASA imagery · Azure AI Speech narration",
+    "audio_credit": "Azure AI Speech · en-US-AvaMultilingualNeural",
+    "duration": "12-second film",
+    "featured": false,
+    "id": "audio-search",
+    "title": "Hear it. Find it.",
+    "eyebrow": "02 / AUDIO → IMAGE",
+    "description": "A spoken mission briefing becomes a visual search. Press play, then let the model listen.",
+    "story": "There is no text query here. The model embeds the actual spoken audio and compares it with NASA photographs.",
+    "cover": "showcase/spacewalk-cover.jpg",
+    "accent": "violet",
+    "preview_audio": "showcase/mission-brief.wav",
+    "transcript": "Mission control, look at that view. An astronaut is floating above the blue Earth, with white clouds far below.",
+    "waveform": [
+      0.392,
+      0.989,
+      0.588,
+      0.567,
+      0.38,
+      0.281,
+      0.645,
+      0.465,
+      0.277,
+      0.007,
+      0.73,
+      0.805,
+      0.879,
+      0.909,
+      0.203,
+      0.274,
+      0.264,
+      0.184,
+      0.028,
+      0.0,
+      0.0,
+      0.001,
+      0.519,
+      0.4,
+      0.89,
+      0.461,
+      0.615,
+      0.845,
+      0.681,
+      0.791,
+      0.305,
+      0.199,
+      0.019,
+      0.768,
+      0.75,
+      0.64,
+      0.437,
+      0.546,
+      0.534,
+      0.38,
+      0.208,
+      0.696,
+      0.718,
+      0.706,
+      0.503,
+      0.097,
+      0.02,
+      0.017,
+      0.022,
+      0.011,
+      0.003,
+      0.413,
+      0.388,
+      0.217,
+      0.812,
+      0.741,
+      0.138,
+      0.737,
+      0.708,
+      0.722,
+      0.2,
+      0.025,
+      0.968,
+      1.0,
+      0.442,
+      0.374,
+      0.434,
+      0.211,
+      0.046,
+      0.009,
+      0.0,
+      0.0
+    ],
+    "audio_duration": 7.449583333333333,
+    "modalities": [
+      "audio",
+      "image",
+      "text"
+    ],
+    "mode": "search",
+    "query": "",
+    "query_files": [
+      "showcase/mission-brief.wav"
+    ],
+    "samples": [
+      {
+        "text": "",
+        "files": [
+          "showcase/spacewalk.jpg"
+        ],
+        "label": "An untethered spacewalk"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/earth.jpg"
+        ],
+        "label": "The blue marble"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/launch.jpg"
+        ],
+        "label": "Artemis I liftoff"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/saturn.jpg"
+        ],
+        "label": "Saturn & Titan"
+      }
+    ]
+  },
+  {
+    "collection": "The Orbit Collection",
+    "credit": "NASA imagery · Azure AI Speech narration",
+    "audio_credit": "Azure AI Speech · en-US-AvaMultilingualNeural",
+    "duration": "12-second film",
+    "featured": false,
+    "id": "video-search",
+    "title": "Twelve seconds to orbit",
+    "eyebrow": "03 / MOVING PICTURES",
+    "description": "Launch. Earth. Spacewalk. Search a cinematic three-scene photo film by its story.",
+    "story": "A locally authored film adds slow camera moves, transitions, and chapter titles to NASA photographs. The embedding model samples its visual frames; this is not original motion footage.",
+    "cover": "showcase/film-scene-1.jpg",
+    "preview_video": "showcase/orbital-film.mp4",
+    "accent": "amber",
+    "modalities": [
+      "text",
+      "video",
+      "image"
+    ],
+    "mode": "search",
+    "query": "A journey showing a rocket launch, the blue Earth from space, and an astronaut on a spacewalk.",
+    "suggestions": [
+      "A rocket lifting off at night with a bright flame.",
+      "A blue planet covered with white clouds."
+    ],
+    "samples": [
+      {
+        "text": "",
+        "files": [
+          "showcase/orbital-film.mp4"
+        ],
+        "label": "Departure → perspective → discovery"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/saturn.jpg"
+        ],
+        "label": "Saturn & Titan"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/pluto.jpg"
+        ],
+        "label": "Pluto in color"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/launch.jpg"
+        ],
+        "label": "One moment: liftoff"
+      }
+    ]
+  },
+  {
+    "collection": "The Orbit Collection",
+    "credit": "NASA imagery · Azure AI Speech narration",
+    "audio_credit": "Azure AI Speech · en-US-AvaMultilingualNeural",
+    "duration": "12-second film",
+    "featured": true,
+    "id": "mixed-input",
+    "title": "One mission. Every dimension.",
+    "eyebrow": "04 / THE FULL EXPERIENCE",
+    "description": "Text, a photograph, a spoken briefing, and a film—woven into one memory.",
+    "story": "Compare a combined mission memory with each of its ingredients. Each row is a real embedding, and every square in the matrix is a computed cosine similarity.",
+    "cover": "showcase/horizon-cover.jpg",
+    "preview_video": "showcase/orbital-film.mp4",
+    "preview_audio": "showcase/mission-brief.wav",
+    "accent": "blue",
+    "modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "mode": "compare",
+    "query": "",
+    "task": "SentenceSimilarity",
+    "samples": [
+      {
+        "text": "A space mission: launching from Earth, orbiting the blue planet, and an astronaut exploring above the clouds.",
+        "files": [
+          "showcase/spacewalk.jpg",
+          "showcase/orbital-film.mp4",
+          "showcase/mission-brief.wav"
+        ],
+        "label": "The complete mission"
+      },
+      {
+        "text": "An astronaut floats in a white spacesuit above the blue Earth.",
+        "files": [],
+        "label": "The written idea"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/spacewalk.jpg"
+        ],
+        "label": "The photograph"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/mission-brief.wav"
+        ],
+        "label": "The spoken briefing"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/orbital-film.mp4"
+        ],
+        "label": "The visual journey"
+      }
+    ]
+  },
+  {
+    "collection": "The Orbit Collection",
+    "credit": "NASA imagery · Azure AI Speech narration",
+    "audio_credit": "Azure AI Speech · en-US-AvaMultilingualNeural",
+    "duration": "12-second film",
+    "featured": false,
+    "id": "multilingual-search",
+    "title": "Same world. Different words.",
+    "eyebrow": "05 / ACROSS LANGUAGES",
+    "description": "Ask in Chinese. Find the same blue planet in a collection of images.",
+    "story": "Try the English and Chinese prompts in turn. This is cross-language image retrieval through the shared embedding space—not translation before inference.",
+    "cover": "showcase/earth-cover.jpg",
+    "accent": "teal",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "mode": "search",
+    "query": "从太空看蓝色的地球，海洋上覆盖着白色的云层。",
+    "suggestions": [
+      "The blue Earth covered in white clouds, photographed from space.",
+      "一个穿着白色宇航服的宇航员漂浮在地球上方。"
+    ],
+    "samples": [
+      {
+        "text": "",
+        "files": [
+          "showcase/earth.jpg"
+        ],
+        "label": "The blue marble"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/saturn.jpg"
+        ],
+        "label": "Saturn & Titan"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/pluto.jpg"
+        ],
+        "label": "Pluto in color"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/spacewalk.jpg"
+        ],
+        "label": "An untethered spacewalk"
+      }
+    ]
+  },
+  {
+    "collection": "The Orbit Collection",
+    "credit": "NASA imagery · Azure AI Speech narration",
+    "audio_credit": "Azure AI Speech · en-US-AvaMultilingualNeural",
+    "duration": "12-second film",
+    "featured": false,
+    "id": "visual-neighbors",
+    "title": "A map of distant worlds",
+    "eyebrow": "06 / SEMANTIC CONSTELLATIONS",
+    "description": "Place Earth, Saturn, Pluto, a rocket, and a spacewalker on one similarity map.",
+    "story": "Some connections are obvious; others are surprising. Explore the actual matrix instead of assuming that similar colors mean similar content.",
+    "cover": "showcase/saturn-cover.jpg",
+    "accent": "violet",
+    "modalities": [
+      "image"
+    ],
+    "mode": "compare",
+    "query": "",
+    "task": "SentenceSimilarity",
+    "samples": [
+      {
+        "text": "",
+        "files": [
+          "showcase/earth.jpg"
+        ],
+        "label": "The blue marble"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/saturn.jpg"
+        ],
+        "label": "Saturn & Titan"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/pluto.jpg"
+        ],
+        "label": "Pluto in color"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/spacewalk.jpg"
+        ],
+        "label": "An untethered spacewalk"
+      },
+      {
+        "text": "",
+        "files": [
+          "showcase/launch.jpg"
+        ],
+        "label": "Artemis I launch"
+      }
+    ]
+  }
+]

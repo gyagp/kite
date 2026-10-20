@@ -1,0 +1,11 @@
+[
+  {
+    "name": "boat-edit",
+    "prompt": "Turn this boat sketch into a photograph of a white yacht on a calm blue sea under a clear sky.",
+    "image": "E:\\workspace\\project\\evo\\models\\qwen-image-2.1-turbo\\assets\\turbo-boat-input.png",
+    "condition_resolution": 512,
+    "width": 512,
+    "height": 512,
+    "seed": 42
+  }
+]

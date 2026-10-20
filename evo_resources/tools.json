@@ -1,0 +1,1775 @@
+{
+  "build": {
+    "description": "Export a checkpoint",
+    "fields": [
+      {
+        "name": "model",
+        "flags": [
+          "--model"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": "Hugging Face model ID",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "config",
+        "flags": [
+          "--config"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": "Local checkpoint directory",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "backend",
+        "flags": [
+          "--backend"
+        ],
+        "required": false,
+        "default": "genai",
+        "choices": [
+          "genai",
+          "mobius"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "precision",
+        "flags": [
+          "--precision"
+        ],
+        "required": false,
+        "default": "int4",
+        "choices": [
+          "int4",
+          "int8",
+          "fp16",
+          "fp32"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "genai_options",
+        "flags": [
+          "--genai-options"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "genai_config",
+        "flags": [
+          "--genai-config"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "mobius_options",
+        "flags": [
+          "--mobius-options"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "mobius_save",
+        "flags": [
+          "--mobius-save"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "runtime_provider_options",
+        "flags": [
+          "--runtime-provider-options"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "ep",
+        "flags": [
+          "--ep"
+        ],
+        "required": false,
+        "default": "webgpu",
+        "choices": [
+          "webgpu"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "activation_dtype",
+        "flags": [
+          "--activation-dtype"
+        ],
+        "required": false,
+        "default": null,
+        "choices": [
+          "fp16",
+          "fp32"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "block_size",
+        "flags": [
+          "--block-size"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "graph_capture",
+        "flags": [
+          "--graph-capture"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "python",
+        "flags": [
+          "--python"
+        ],
+        "required": false,
+        "default": "E:\\workspace\\project\\kite\\local\\.venv\\Scripts\\python.exe",
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dry_run",
+        "flags": [
+          "--dry-run"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      }
+    ]
+  },
+  "plan": {
+    "description": "Preview a recipe",
+    "fields": [
+      {
+        "name": "recipe",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "python",
+        "flags": [
+          "--python"
+        ],
+        "required": false,
+        "default": "E:\\workspace\\project\\kite\\local\\.venv\\Scripts\\python.exe",
+        "choices": null,
+        "help": "Exporter Python executable",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "convert": {
+    "description": "Run an export recipe",
+    "fields": [
+      {
+        "name": "recipe",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "python",
+        "flags": [
+          "--python"
+        ],
+        "required": false,
+        "default": "E:\\workspace\\project\\kite\\local\\.venv\\Scripts\\python.exe",
+        "choices": null,
+        "help": "Exporter Python executable",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "optimize": {
+    "description": "Apply Mobius's complete general and WebGPU-aware pipeline to an existing package.",
+    "fields": [
+      {
+        "name": "source",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dtype",
+        "flags": [
+          "--dtype"
+        ],
+        "required": false,
+        "default": "auto",
+        "choices": [
+          "auto",
+          "fp16",
+          "fp32"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "role",
+        "flags": [
+          "--role"
+        ],
+        "required": false,
+        "default": "auto",
+        "choices": [
+          "auto",
+          "decoder",
+          "encoder",
+          "vision",
+          "generic"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "contrib",
+        "flags": [
+          "--contrib"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": "Try validated-pattern contrib-op rewrites",
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "contrib",
+        "flags": [
+          "--no-contrib"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreFalseAction",
+        "nargs": 0
+      }
+    ]
+  },
+  "quantize": {
+    "description": "Selectively quantize constant MatMul weights in an existing ONNX package.",
+    "fields": [
+      {
+        "name": "source",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "node_regex",
+        "flags": [
+          "--node-regex"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "bits",
+        "flags": [
+          "--bits"
+        ],
+        "required": false,
+        "default": 8,
+        "choices": [
+          4,
+          8
+        ],
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "block_size",
+        "flags": [
+          "--block-size"
+        ],
+        "required": false,
+        "default": 32,
+        "choices": [
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "inspect": {
+    "description": "Inspect a graph",
+    "fields": [
+      {
+        "name": "model",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "report",
+        "flags": [
+          "--report"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "analyze": {
+    "description": "Suggest export/graph work and distinguish it from proposed runtime development.",
+    "fields": [
+      {
+        "name": "model",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "profile",
+        "flags": [
+          "--profile"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "contrib": {
+    "description": "ORT schema knowledge and versioned WebGPU optimization guidance.\n\nSchema availability is intentionally separate from runtime kernel availability.\n",
+    "fields": [
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "capabilities": {
+    "description": "Inventory installed upstream controls and selected WebGPU optimization stages.",
+    "fields": [
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "validate-cpu": {
+    "description": "Compare reference tensors",
+    "fields": [
+      {
+        "name": "model",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "inputs",
+        "flags": [
+          "--inputs"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "expected",
+        "flags": [
+          "--expected"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "rtol",
+        "flags": [
+          "--rtol"
+        ],
+        "required": false,
+        "default": 0.001,
+        "choices": null,
+        "help": null,
+        "type": "float",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "atol",
+        "flags": [
+          "--atol"
+        ],
+        "required": false,
+        "default": 0.0001,
+        "choices": null,
+        "help": null,
+        "type": "float",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "report",
+        "flags": [
+          "--report"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "profile": {
+    "description": "Profile an existing ONNX model with explicit NPZ inputs on native WebGPU.",
+    "fields": [
+      {
+        "name": "model",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "inputs",
+        "flags": [
+          "--inputs"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "runs",
+        "flags": [
+          "--runs"
+        ],
+        "required": false,
+        "default": 3,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "ep_library",
+        "flags": [
+          "--ep-library"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "benchmark": {
+    "description": "Native GenAI WebGPU measurements with synchronized token observation.",
+    "fields": [
+      {
+        "name": "package",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "cases",
+        "flags": [
+          "--cases"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "repeats",
+        "flags": [
+          "--repeats"
+        ],
+        "required": false,
+        "default": 3,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "warmup",
+        "flags": [
+          "--warmup"
+        ],
+        "required": false,
+        "default": 1,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "new_tokens",
+        "flags": [
+          "--new-tokens"
+        ],
+        "required": false,
+        "default": 32,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "provider_options",
+        "flags": [
+          "--provider-options"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON provider option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "search_options",
+        "flags": [
+          "--search-options"
+        ],
+        "required": false,
+        "default": "{}",
+        "choices": null,
+        "help": "JSON runtime search option object",
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "max_length",
+        "flags": [
+          "--max-length"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "ep_library",
+        "flags": [
+          "--ep-library"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": "Use a specific native WebGPU library",
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "require_idle",
+        "flags": [
+          "--require-idle"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": "Reject timing with competing build/test processes",
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "reuse_generator",
+        "flags": [
+          "--reuse-generator"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "synchronization",
+        "flags": [
+          "--synchronization"
+        ],
+        "required": false,
+        "default": "get_next_tokens",
+        "choices": [
+          "get_next_tokens",
+          "is_done"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "embedding-export": {
+    "description": "Export the EmbeddingGemma 2 text encoder with masked mean pooling and L2 norm.",
+    "fields": [
+      {
+        "name": "source",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "precision",
+        "flags": [
+          "--precision"
+        ],
+        "required": false,
+        "default": "fp32",
+        "choices": [
+          "fp32",
+          "fp16"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "transformers_path",
+        "flags": [
+          "--transformers-path"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "native_norms",
+        "flags": [
+          "--native-norms"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "multimodal",
+        "flags": [
+          "--multimodal"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": "Export text, vision and audio graphs",
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      }
+    ]
+  },
+  "embedding-validate": {
+    "description": "Validate embedding ONNX outputs against independent Transformers reference fixtures.",
+    "fields": [
+      {
+        "name": "package",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "fixtures",
+        "flags": [
+          "--fixtures"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "prepare",
+        "flags": [
+          "--prepare"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "cpu",
+        "flags": [
+          "--cpu"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "transformers_path",
+        "flags": [
+          "--transformers-path"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "multimodal",
+        "flags": [
+          "--multimodal"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      }
+    ]
+  },
+  "embedding-benchmark": {
+    "description": "Measure synchronized native WebGPU embedding latency on fixed token fixtures.",
+    "fields": [
+      {
+        "name": "package",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "fixtures",
+        "flags": [
+          "--fixtures"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "repeats",
+        "flags": [
+          "--repeats"
+        ],
+        "required": false,
+        "default": 5,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "warmup",
+        "flags": [
+          "--warmup"
+        ],
+        "required": false,
+        "default": 2,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "embed": {
+    "description": "Generate normalized text embeddings using native ORT WebGPU.",
+    "fields": [
+      {
+        "name": "package",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "text",
+        "flags": [
+          "--text"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_AppendAction",
+        "nargs": null
+      },
+      {
+        "name": "image",
+        "flags": [
+          "--image"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      },
+      {
+        "name": "audio",
+        "flags": [
+          "--audio"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      },
+      {
+        "name": "video",
+        "flags": [
+          "--video"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      },
+      {
+        "name": "transformers_path",
+        "flags": [
+          "--transformers-path"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "task",
+        "flags": [
+          "--task"
+        ],
+        "required": false,
+        "default": "SearchQuery",
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dimensions",
+        "flags": [
+          "--dimensions"
+        ],
+        "required": false,
+        "default": 768,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "image-export": {
+    "description": "Qwen-Image 2.1 graph authoring with reusable prefix K/V and native ORT attention.\n\nThe source pipeline owns text/image preprocessing, RoPE metadata and scheduling.\nThese graphs own every learned denoiser operation. Export is shape-only; weights\nare streamed from safetensors so a 7B model never becomes a giant protobuf.\n",
+    "fields": [
+      {
+        "name": "source",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "bits",
+        "flags": [
+          "--bits"
+        ],
+        "required": false,
+        "default": 8,
+        "choices": [
+          0,
+          4,
+          8
+        ],
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "gguf",
+        "flags": [
+          "--gguf"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": "Use GGUF denoiser weights instead of source safetensors",
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "gguf_zero_points",
+        "flags": [
+          "--gguf-zero-points"
+        ],
+        "required": false,
+        "default": "correction",
+        "choices": [
+          "correction",
+          "float"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dependencies",
+        "flags": [
+          "--dependencies"
+        ],
+        "required": false,
+        "default": [],
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      }
+    ]
+  },
+  "image-prepare": {
+    "description": "Prepare identical Qwen-Image 2.1 inputs for ONNX, GGUF and reference runs.",
+    "fields": [
+      {
+        "name": "source",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "cases",
+        "flags": [
+          "--cases"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dependencies",
+        "flags": [
+          "--dependencies"
+        ],
+        "required": false,
+        "default": [],
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      }
+    ]
+  },
+  "image-generate": {
+    "description": "Run matched Qwen-Image 2.1 denoisers and decode their saved latents.",
+    "fields": [
+      {
+        "name": "action",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": [
+          "prefix",
+          "generate",
+          "decode"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "source",
+        "flags": [
+          "--source"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "package",
+        "flags": [
+          "--package"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "fixtures",
+        "flags": [
+          "--fixtures"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "backend",
+        "flags": [
+          "--backend"
+        ],
+        "required": false,
+        "default": "onnx",
+        "choices": [
+          "onnx",
+          "gguf",
+          "reference"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "gguf",
+        "flags": [
+          "--gguf"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "prefix_dir",
+        "flags": [
+          "--prefix-dir"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "repeats",
+        "flags": [
+          "--repeats"
+        ],
+        "required": false,
+        "default": 3,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "warmup",
+        "flags": [
+          "--warmup"
+        ],
+        "required": false,
+        "default": 1,
+        "choices": null,
+        "help": null,
+        "type": "int",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "no_capture",
+        "flags": [
+          "--no-capture"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "profile",
+        "flags": [
+          "--profile"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "fp32_accumulation",
+        "flags": [
+          "--fp32-accumulation"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": "Request FP32 MatMul accumulation",
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "require_idle",
+        "flags": [
+          "--require-idle"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": null,
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "webgpu_backend",
+        "flags": [
+          "--webgpu-backend"
+        ],
+        "required": false,
+        "default": "D3D12",
+        "choices": [
+          "D3D12",
+          "Vulkan"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "graph_variant",
+        "flags": [
+          "--graph-variant"
+        ],
+        "required": false,
+        "default": "capture",
+        "choices": [
+          "capture",
+          "rms",
+          "short-blocks",
+          "projections"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dependencies",
+        "flags": [
+          "--dependencies"
+        ],
+        "required": false,
+        "default": [],
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      }
+    ]
+  },
+  "image-optimize": {
+    "description": "Qwen-Image graph rewrites preserving weight values and RMS rounding points.",
+    "fields": [
+      {
+        "name": "package",
+        "flags": [],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "short_blocks",
+        "flags": [
+          "--short-blocks"
+        ],
+        "required": false,
+        "default": false,
+        "choices": null,
+        "help": "Promote Q6_K short blocks to FP16",
+        "type": "str",
+        "action": "_StoreTrueAction",
+        "nargs": 0
+      },
+      {
+        "name": "merge_projections",
+        "flags": [
+          "--merge-projections"
+        ],
+        "required": false,
+        "default": null,
+        "choices": null,
+        "help": "Merge parallel projections into a compact new package",
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "base_variant",
+        "flags": [
+          "--base-variant"
+        ],
+        "required": false,
+        "default": "short-blocks",
+        "choices": [
+          "capture",
+          "short-blocks"
+        ],
+        "help": null,
+        "type": "str",
+        "action": "_StoreAction",
+        "nargs": null
+      }
+    ]
+  },
+  "image-report": {
+    "description": "Summarize matched image benchmarks and their distance from a BF16 reference.",
+    "fields": [
+      {
+        "name": "onnx",
+        "flags": [
+          "--onnx"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "gguf",
+        "flags": [
+          "--gguf"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "reference",
+        "flags": [
+          "--reference"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "prefix",
+        "flags": [
+          "--prefix"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "output",
+        "flags": [
+          "--output"
+        ],
+        "required": true,
+        "default": null,
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_StoreAction",
+        "nargs": null
+      },
+      {
+        "name": "dependencies",
+        "flags": [
+          "--dependencies"
+        ],
+        "required": false,
+        "default": [],
+        "choices": null,
+        "help": null,
+        "type": "Path",
+        "action": "_AppendAction",
+        "nargs": null
+      }
+    ]
+  }
+}

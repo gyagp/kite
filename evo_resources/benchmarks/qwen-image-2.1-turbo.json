@@ -1,0 +1,23 @@
+[
+  {
+    "name": "photograph",
+    "prompt": "A photograph of a red ceramic teapot beside a clear glass cup on a wooden table, morning sunlight through a window, a small green plant in the background.",
+    "seed": 42,
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "name": "typography",
+    "prompt": "A clean illustrated poster for a science fair. Large readable title at the top: SCIENCE FAIR. Below the title, a colorful model rocket, a blue planet and a green microscope, arranged on a cream background with plenty of white space.",
+    "seed": 7,
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "name": "composition",
+    "prompt": "A watercolor illustration of three small boats, one red, one blue and one yellow, floating on a calm lake beneath a stone bridge. Mountains and pine trees in the distance, soft evening light.",
+    "seed": 123,
+    "width": 1024,
+    "height": 1024
+  }
+]

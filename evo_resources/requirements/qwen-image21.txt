@@ -1,0 +1,12 @@
+# Install a compatible CUDA torch/torchvision build separately for the reference,
+# text encoder, GGUF baseline and VAE. Native ONNX denoising itself uses WebGPU.
+diffusers @ https://github.com/huggingface/diffusers/archive/b800f828f3951c4d206e154411bcbfa693cd322e.zip
+transformers @ https://github.com/huggingface/transformers/archive/536ecc007387a50e77603bb5d92100e9b07514cc.zip
+gguf==0.19.0
+accelerate>=1.0
+numpy>=2.0
+safetensors>=0.6
+pillow==12.3.0
+requests>=2.32
+importlib-metadata>=8
+lpips==0.1.4

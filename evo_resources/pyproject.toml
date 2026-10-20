@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "evo-onnx"
+version = "0.2.0"
+description = "Recipe-driven ONNX exports targeting ONNX Runtime WebGPU"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["onnx>=1.18,<2"]
+
+[project.optional-dependencies]
+genai = [
+  "onnxruntime-genai>=0.17.1,<0.18",
+  "torch>=2.6",
+  "transformers>=5.2,<6",
+  "onnx-ir",
+  "onnxscript",
+  "accelerate",
+  "safetensors",
+]
+mobius = ["mobius-onnx @ git+https://github.com/onnxruntime/mobius.git@88f7d045388ccdcd98e8a23f4abcbcdfd39f65e6"]
+validation = ["onnxruntime>=1.22,<2"]
+native = ["onnxruntime>=1.31,<2", "onnxruntime-genai==0.17.1", "onnxruntime-ep-webgpu==0.4.0", "psutil>=6"]
+ui-test = ["playwright>=1.50"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.11"]
+
+[project.scripts]
+evo = "evo.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/evo"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = [".cache", ".venv*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

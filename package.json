@@ -1,0 +1,96 @@
+{
+  "name": "kite",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A local Windows workspace for ONNX Runtime WebGPU models",
+  "author": "Kite",
+  "license": "MIT",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "server": "local/.venv/Scripts/python.exe -m backend.server",
+    "build": "tsc -b && vite build",
+    "start": "npm run build && electron .",
+    "desktop": "electron .",
+    "test": "local/.venv/Scripts/python.exe -m unittest discover -s tests -v",
+    "test:ui": "node scripts/ui-smoke.mjs",
+    "test:desktop": "node scripts/desktop-smoke.mjs",
+    "test:chat-ui": "node scripts/chat-ui-smoke.mjs",
+    "test:multimodal-ui": "node scripts/multimodal-ui-smoke.mjs",
+    "format": "prettier --write src electron scripts/*.mjs package.json vite.config.ts tsconfig.json",
+    "pack": "npm run build && electron-builder --win dir",
+    "evo": "local/.venv/Scripts/python.exe -m evo",
+    "test:evo": "local/.venv/Scripts/python.exe -m pytest tests_evo"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^41.10.7",
+    "electron-builder": "^26.17.0",
+    "playwright": "^1.56.0",
+    "prettier": "^3.6.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  },
+  "build": {
+    "appId": "local.kite.desktop",
+    "productName": "Kite",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "demo",
+        "to": "demo"
+      },
+      {
+        "from": "dist",
+        "to": "dist"
+      },
+      {
+        "from": "backend",
+        "to": "backend",
+        "filter": [
+          "**/*.py",
+          "**/*.json"
+        ]
+      },
+      {
+        "from": "evo",
+        "to": "evo",
+        "filter": [
+          "**/*.py",
+          "web/**/*"
+        ]
+      },
+      {
+        "from": "evo_resources",
+        "to": "evo_resources",
+        "filter": [
+          "**/*",
+          "!**/__pycache__/**"
+        ]
+      }
+    ],
+    "win": {
+      "target": "dir",
+      "icon": "build/kite.ico",
+      "signExecutable": false
+    }
+  }
+}

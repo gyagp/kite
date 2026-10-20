@@ -1,0 +1,7 @@
+# An encoder example; model support and WebGPU placement still require validation.
+backend = "mobius"
+source = "google-bert/bert-base-uncased"
+source_kind = "huggingface"
+output = "../artifacts/bert-mobius-fp32"
+target = "ort-webgpu"
+precision = "fp32"

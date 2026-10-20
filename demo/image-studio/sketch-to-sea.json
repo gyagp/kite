@@ -1,0 +1,171 @@
+{
+  "id": "1266ac01c5d24eb68f12e7d6c4ea2853",
+  "prompt": "Turn this boat sketch into a photograph of a white yacht on a calm blue sea under a clear sky.",
+  "width": 512,
+  "height": 512,
+  "seed": 42,
+  "attachments": [
+    "a76bc70f391544a3b29aa4e8e0ab633e"
+  ],
+  "image_url": "/api/images/1266ac01c5d24eb68f12e7d6c4ea2853/image.png",
+  "created": 1792283743.1600785,
+  "phases": {
+    "prepare": {
+      "total_ms": 15315.764200000558,
+      "wall_ms": 16395.52410005126
+    },
+    "prefix": {
+      "model_load_ms": 2997.9102999786846,
+      "inference_ms": 1120.1464000041597,
+      "runtime": {
+        "path": "E:\\workspace\\project\\evo\\artifacts\\runtimes\\ort-webgpu-c64c9fd764-bk64\\onnxruntime_providers_webgpu.dll",
+        "sha256": "6ce1ad3fe6f00f63a608ae7ceca117a9a02213ec406c598e257bb76dd311aff8",
+        "custom_library": true,
+        "selection": "environment",
+        "build": {
+          "source": "https://github.com/microsoft/onnxruntime",
+          "revision": "c64c9fd76404df85bbbac37485d5c0f2babcd194",
+          "source_directory": "E:\\workspace\\project\\ws-ort\\ort-prs\\evo-qwen-image-gguf",
+          "variant": "float-zero-points-bk64",
+          "build_exit_code": 0,
+          "build_log": "E:\\workspace\\project\\ws-ort\\ort-prs\\evo-qwen-image-gguf\\build\\bk64-build.log",
+          "cmake_cache_sha256": "3a350a91a2afc54af73238b64ec673c3cf0399e945c7c8facc4fe0f76805ee80",
+          "patch_sha256": "52092ca8edecd0d4dee5a72274afb2337894d914d7b40db205c8ab1c67c6101f",
+          "backends": {
+            "D3D12": true,
+            "Vulkan": true
+          },
+          "config": "Release",
+          "lto": true,
+          "rtti": false,
+          "dawn_tag": "v20261013.193955",
+          "dxc": "Official v1.8.2502 sidecars",
+          "dlls": {
+            "dxcompiler.dll": {
+              "bytes": 17986592,
+              "sha256": "f79943b02f73b621421b58a569fd6ee120d0023fb6bfa23844ecad6b00d6a295"
+            },
+            "dxil.dll": {
+              "bytes": 1508896,
+              "sha256": "62736e99aa534a942873f92b881a71b2cb6ad62b8d7481ea7a8ad8e9888a8056"
+            },
+            "onnxruntime_providers_webgpu.dll": {
+              "bytes": 13420544,
+              "sha256": "6ce1ad3fe6f00f63a608ae7ceca117a9a02213ec406c598e257bb76dd311aff8"
+            },
+            "vulkan-1.dll": {
+              "bytes": 1730096,
+              "sha256": "36bc3bdf5c83b1a18b3adec78381676ad1c88868e3aa1e606c1b67d9a1449a55"
+            }
+          }
+        },
+        "device": {
+          "Description": "NVIDIA GeForce RTX 5080",
+          "Discrete": "1",
+          "DxgiAdapterNumber": "0",
+          "DxgiHighPerformanceIndex": "0",
+          "DxgiVideoMemory": "15977 MB",
+          "LUID": "77302"
+        },
+        "provider_options": {
+          "powerPreference": "high-performance",
+          "dawnBackendType": "Vulkan",
+          "validationMode": "basic",
+          "enableGraphCapture": "0",
+          "enableMatmulFp32Accumulation": "1"
+        }
+      },
+      "prefix_tokens": 1007,
+      "graph_sha256": "6a81c6d17a02547a7fc9e95c669f2a1966605897e3cf200d7de7270576d73599",
+      "total_ms": 5690.298400004394,
+      "wall_ms": 6466.371100046672
+    },
+    "denoise": {
+      "model_load_ms": 3062.709799967706,
+      "inference_ms": 9325.772700074594,
+      "step_ms": [
+        2098.5907000140287,
+        1032.105499994941,
+        1031.9834999972954,
+        1032.0118999807164,
+        1032.5354000087827,
+        1031.1265000491403,
+        1032.0088000153191,
+        1035.4104000143707
+      ],
+      "steps": 8,
+      "runtime": {
+        "path": "E:\\workspace\\project\\evo\\artifacts\\runtimes\\ort-webgpu-c64c9fd764-bk64\\onnxruntime_providers_webgpu.dll",
+        "sha256": "6ce1ad3fe6f00f63a608ae7ceca117a9a02213ec406c598e257bb76dd311aff8",
+        "custom_library": true,
+        "selection": "environment",
+        "build": {
+          "source": "https://github.com/microsoft/onnxruntime",
+          "revision": "c64c9fd76404df85bbbac37485d5c0f2babcd194",
+          "source_directory": "E:\\workspace\\project\\ws-ort\\ort-prs\\evo-qwen-image-gguf",
+          "variant": "float-zero-points-bk64",
+          "build_exit_code": 0,
+          "build_log": "E:\\workspace\\project\\ws-ort\\ort-prs\\evo-qwen-image-gguf\\build\\bk64-build.log",
+          "cmake_cache_sha256": "3a350a91a2afc54af73238b64ec673c3cf0399e945c7c8facc4fe0f76805ee80",
+          "patch_sha256": "52092ca8edecd0d4dee5a72274afb2337894d914d7b40db205c8ab1c67c6101f",
+          "backends": {
+            "D3D12": true,
+            "Vulkan": true
+          },
+          "config": "Release",
+          "lto": true,
+          "rtti": false,
+          "dawn_tag": "v20261013.193955",
+          "dxc": "Official v1.8.2502 sidecars",
+          "dlls": {
+            "dxcompiler.dll": {
+              "bytes": 17986592,
+              "sha256": "f79943b02f73b621421b58a569fd6ee120d0023fb6bfa23844ecad6b00d6a295"
+            },
+            "dxil.dll": {
+              "bytes": 1508896,
+              "sha256": "62736e99aa534a942873f92b881a71b2cb6ad62b8d7481ea7a8ad8e9888a8056"
+            },
+            "onnxruntime_providers_webgpu.dll": {
+              "bytes": 13420544,
+              "sha256": "6ce1ad3fe6f00f63a608ae7ceca117a9a02213ec406c598e257bb76dd311aff8"
+            },
+            "vulkan-1.dll": {
+              "bytes": 1730096,
+              "sha256": "36bc3bdf5c83b1a18b3adec78381676ad1c88868e3aa1e606c1b67d9a1449a55"
+            }
+          }
+        },
+        "device": {
+          "Description": "NVIDIA GeForce RTX 5080",
+          "Discrete": "1",
+          "DxgiAdapterNumber": "0",
+          "DxgiHighPerformanceIndex": "0",
+          "DxgiVideoMemory": "15977 MB",
+          "LUID": "77302"
+        },
+        "provider_options": {
+          "powerPreference": "high-performance",
+          "dawnBackendType": "Vulkan",
+          "validationMode": "basic",
+          "enableGraphCapture": "1",
+          "enableMatmulFp32Accumulation": "1"
+        }
+      },
+      "capture": true,
+      "total_ms": 16303.4570000018,
+      "wall_ms": 16785.341200011317
+    },
+    "decode": {
+      "total_ms": 6006.783399963751,
+      "wall_ms": 6980.084299982991
+    }
+  },
+  "request_ms": 46627.42009997601,
+  "steps": 8,
+  "capture": true,
+  "path": "test-results\\merged-workspace\\images\\1266ac01c5d24eb68f12e7d6c4ea2853\\image.png",
+  "package": "E:\\workspace\\project\\evo\\artifacts\\qwen-image-2.1-turbo-gguf-floatzp",
+  "source": "E:\\workspace\\project\\evo\\models\\qwen-image-2.1-turbo",
+  "timing_method": "Cold interactive wall clock, including shader compilation. Denoiser: ORT WebGPU Vulkan. Text/reference encoding and VAE: PyTorch CUDA. Not a warmed benchmark."
+}

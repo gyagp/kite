@@ -1,0 +1,20 @@
+# Selected from local RTX 5080 measurements; see docs/qwen35-results.md.
+# Selected among Evo candidates only. The prior WebGFX package is faster;
+# see docs/previous-vs-evo.md before using this as a performance recommendation.
+backend = "genai"
+source = "../models/qwen35-4b"
+source_kind = "local"
+output = "../artifacts/qwen35-4b-recommended-export"
+precision = "int4"
+activation_dtype = "fp16"
+block_size = 32
+graph_capture = false
+
+[genai_options]
+exclude_mtp = true
+prune_lm_head = true
+fuse_mlp_gate_up = true
+accuracy_level = 4
+
+[genai_config.search]
+max_length = 4096

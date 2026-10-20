@@ -1,0 +1,308 @@
+{
+  "scope": "Installed upstream versions; exposed controls are not all mutually compatible",
+  "genai": {
+    "version": "0.17.1",
+    "extra_options": {
+      "_drafter_quant_config": [
+        "builders\\qwen.py:1223"
+      ],
+      "_effective_builder_config": [
+        "builder.py:608"
+      ],
+      "_quant_config": [
+        "builder.py:652",
+        "builder_config.py:685",
+        "builders\\base.py:995",
+        "builders\\qwen.py:1542"
+      ],
+      "_runtime_config": [
+        "builder.py:800"
+      ],
+      "_shared_weight_policies": [
+        "builders\\qwen.py:1221"
+      ],
+      "accuracy_level": [
+        "quantization\\quant_config.py:498"
+      ],
+      "adapter_path": [
+        "builder.py:121",
+        "builders\\base.py:123"
+      ],
+      "algo_config": [
+        "quantization\\quant_config.py:368"
+      ],
+      "aux_hidden_state_layers": [
+        "builders\\base.py:613"
+      ],
+      "block_size": [
+        "quantization\\quant_config.py:494"
+      ],
+      "config_only": [
+        "builder.py:658"
+      ],
+      "dflash2_fuse_gate_up": [
+        "builders\\qwen.py:1234"
+      ],
+      "dflash2_path": [
+        "builders\\qwen.py:1214"
+      ],
+      "disable_qkv_fusion": [
+        "builders\\base.py:729",
+        "builders\\base.py:774"
+      ],
+      "dspark_path": [
+        "builders\\qwen.py:1425"
+      ],
+      "dspark_top_k": [
+        "builders\\qwen.py:1441"
+      ],
+      "enable_cuda_fpa_intb_gemm": [
+        "builders\\base.py:1427"
+      ],
+      "enable_cuda_graph": [
+        "builders\\base.py:146"
+      ],
+      "enable_dml_graph": [
+        "builders\\base.py:149"
+      ],
+      "enable_webgpu_graph": [
+        "builders\\base.py:3548",
+        "builders\\base.py:152",
+        "builders\\base.py:153",
+        "builders\\base.py:537",
+        "builders\\phi.py:135"
+      ],
+      "exclude_embeds": [
+        "builders\\base.py:559"
+      ],
+      "exclude_lm_head": [
+        "builder.py:352",
+        "builders\\base.py:605"
+      ],
+      "exclude_mtp": [
+        "builders\\qwen.py:938"
+      ],
+      "filename": [
+        "builders\\base.py:126"
+      ],
+      "fuse_mlp_gate_up": [
+        "builders\\base.py:402"
+      ],
+      "fuse_qk_norm_gqa": [
+        "builders\\base.py:740"
+      ],
+      "gpu_utilization_factor": [
+        "builders\\base.py:1446"
+      ],
+      "hf_details": [
+        "builder.py:642"
+      ],
+      "hf_remote": [
+        "builder.py:110",
+        "builders\\base.py:128"
+      ],
+      "hf_token": [
+        "builder.py:109",
+        "builders\\base.py:127"
+      ],
+      "include_hidden_states": [
+        "builder.py:352",
+        "builders\\base.py:606"
+      ],
+      "is_symmetric": [
+        "builder.py:522",
+        "builder.py:525",
+        "builder.py:345",
+        "quantization\\quant_config.py:491"
+      ],
+      "kv_cache_quant_scheme": [
+        "builders\\base.py:377"
+      ],
+      "kv_cache_rotation": [
+        "builders\\base.py:805"
+      ],
+      "kv_cache_scale_file": [
+        "builders\\base.py:394"
+      ],
+      "linear_attn_op": [
+        "builders\\qwen.py:127"
+      ],
+      "matmul_mixed_precision": [
+        "quantization\\quant_config.py:374"
+      ],
+      "matmulnbits_weights_prepacked": [
+        "builder.py:318",
+        "quantization\\quant_config.py:525"
+      ],
+      "max_batch_size": [
+        "builder.py:273",
+        "builders\\base.py:1438"
+      ],
+      "moe_quant_type": [
+        "builder.py:404",
+        "builder_config.py:686",
+        "quantization\\quant_config.py:505"
+      ],
+      "mtp_quant_config": [
+        "builders\\mtp.py:30"
+      ],
+      "nodes_to_exclude": [
+        "builder.py:307",
+        "quantization\\quant_config.py:485",
+        "quantization\\quant_config.py:535"
+      ],
+      "op_types_to_quantize": [
+        "builder.py:301",
+        "builder.py:435",
+        "quantization\\quant_config.py:500"
+      ],
+      "paged_block_size": [
+        "builder.py:270",
+        "builders\\base.py:759"
+      ],
+      "paged_chunk_size": [
+        "builders\\base.py:1412"
+      ],
+      "prune_lm_head": [
+        "builders\\base.py:607",
+        "builders\\base.py:580"
+      ],
+      "qmoe_block_size": [
+        "quantization\\quant_config.py:518"
+      ],
+      "qmoe_weights_prepacked": [
+        "builder.py:315",
+        "quantization\\quant_config.py:519"
+      ],
+      "shared_embeddings": [
+        "builders\\base.py:1155"
+      ],
+      "state_update_capacity": [
+        "builders\\base.py:509"
+      ],
+      "state_window": [
+        "builder.py:408",
+        "builders\\base.py:500"
+      ],
+      "use_8bits_moe": [
+        "quantization\\quant_config.py:508"
+      ],
+      "use_cuda_bf16": [
+        "quantization\\quant_config.py:350"
+      ],
+      "use_device_allocator_for_initializers": [
+        "builders\\base.py:1432"
+      ],
+      "use_paged_attention": [
+        "builder.py:240",
+        "builder.py:210",
+        "builders\\base.py:485"
+      ],
+      "use_qdq": [
+        "builder.py:362",
+        "quantization\\quant_config.py:524"
+      ],
+      "use_webgpu_fp32": [
+        "quantization\\quant_config.py:347"
+      ],
+      "windowed_kv_cache": [
+        "builders\\base.py:486"
+      ]
+    },
+    "structured_sections": [
+      "target_options",
+      "drafter_options",
+      "speculative_options",
+      "runtime_config",
+      "search"
+    ],
+    "source": {
+      "root": "E:\\workspace\\project\\evo\\.venv\\Lib\\site-packages\\onnxruntime_genai",
+      "files": {
+        "models/builder.py": "3f1aa9568e1af056dba861d14b15accdd4815344498cc3cb48cdfab53914e570",
+        "models/builders/base.py": "7c332cad47a0eee765d9a1b01a1681d88fccaea943addf53a1437cc36c0c5e47",
+        "models/builders/qwen.py": "9ef99a8b0ec9ce863d03f1cec7714d308cf0017d1deac4ca56916cfceff8c8bb",
+        "models/quantization/quant_config.py": "1863b6755f5d22f0750b29af211ee883d969dbb644345c37e3ac0e62c247184e"
+      }
+    }
+  },
+  "mobius": {
+    "version": "0.1.0",
+    "build_signature": "(model_id: 'str', task: 'str | ModelTask | None' = None, *, revision: 'str | None' = None, module_class: 'type[nn.Module] | None' = None, dtype: 'str | ir.DataType | None' = None, output_layer_indices: 'list[int] | None' = None, load_weights: 'bool' = True, keep_quantized: 'bool' = True, trust_remote_code: 'bool' = False, execution_provider: 'str' = 'default', trace_optimization: 'bool' = False, text_only: 'bool' = False, fp8_kv_cache: 'bool' = False, kv_cache_scales: 'dict[int, tuple[float, float]] | None' = None, prune_prefill_prefix: 'bool' = False, glm_full_attention: 'bool' = False, export_paged_attention: 'bool' = False, input_sampling_rate: 'int | None' = None, bwe_sampling_rate: 'int | None' = None) -> 'ModelPackage'",
+    "save_signature": "(self, directory: 'str', *, external_data: 'str' = 'onnx', max_shard_size_bytes: 'int | None' = None, max_workers: 'int' = 8, components: 'Callable[[str], bool] | None' = None, progress_bar: 'bool' = True, check_weights: 'bool' = True, include_policy_components: 'bool' = True, include_adapter_artifacts: 'bool' = True, _atomic_export_report: 'bool' = True, _component_layout: '_ComponentSaveLayout | None' = None) -> 'None'",
+    "cleanup": [
+      "IdentityEliminationPass",
+      "LiftConstantsToInitializersPass",
+      "DeduplicateInitializersPass",
+      "CommonSubexpressionEliminationPass",
+      "RemoveUnusedNodesPass",
+      "RemoveUnusedOpsetsPass",
+      "SymbolicShapeInferencePass",
+      "FoldConstantsPass",
+      "CleanupMetadataPass"
+    ],
+    "fp16_decoder_fusion": [
+      "GQAFusion",
+      "PackQKV",
+      "SkipNorm",
+      "SkipLayerNorm",
+      "GeluFusion"
+    ],
+    "fp16_decoder_lowering": [
+      "StaticEmptyKV"
+    ],
+    "post_weights": [
+      "LiftConstantsToInitializersPass",
+      "FoldConcatInitializersPass",
+      "FoldTransposedInitializerPass",
+      "RemoveUnusedNodesPass"
+    ],
+    "webgpu_capabilities": {
+      "name": "webgpu",
+      "gqa_dtypes": [
+        "FLOAT",
+        "FLOAT16"
+      ],
+      "qkv_pack_dtypes": [
+        "FLOAT",
+        "FLOAT16"
+      ],
+      "supports_fused_rope": true,
+      "supports_skip_layer_norm": true,
+      "supports_fused_moe": true,
+      "supports_packed_multi_head_attention": false,
+      "supports_rank4_rmsnorm": true,
+      "supports_attention": true,
+      "supports_matmul_nbits": true,
+      "supports_rotary_embedding": true,
+      "supports_tensor_scatter": true,
+      "supports_range": true,
+      "supports_fp8_kv_cache": false,
+      "default_int4_accuracy_level": 4,
+      "provider_options": {},
+      "enable_graph_capture": true,
+      "supports_past_present_share_buffer": true,
+      "cap_kv_buffer_max_length": true,
+      "max_buffer_size": 268435456,
+      "layered_per_layer_inputs": false,
+      "requires_graph_capture_rewrite": true
+    },
+    "flags": {
+      "suppress_dedup_warning": true,
+      "ort_cuda_grouped_rmsnorm_workaround": false,
+      "ort_lower_opset_for_ep": false,
+      "tencent_q1_0_use_native_2bit": false,
+      "static_cache_bias": false,
+      "allow_dense_moe_experts": false
+    },
+    "source": {
+      "root": "E:\\workspace\\project\\evo\\.cache\\upstream\\mobius\\src\\mobius",
+      "files": {
+        "_optimizations.py": "cb5c47c779358a585e5f173b41331b81c27d270f0074b446e76aac336a7ccd6b",
+        "_execution_providers.py": "5b960d9c2117c4357945e5f83ab58fca27bf7dffdd89cc0325e1697c58313111",
+        "_builder.py": "966d8c19039575a88c4873d85826d203bcd63c9855054e1220fdf0d949e7597f",
+        "_flags.py": "e676bbdd41a17aa581299da0c74e5b3d04f70279a9cf7926c57b5b0093040ff4"
+      }
+    }
+  }
+}

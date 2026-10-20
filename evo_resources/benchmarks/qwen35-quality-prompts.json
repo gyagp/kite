@@ -1,0 +1,14 @@
+[
+  "What is the capital of France? Answer with just the city name.",
+  "Write a Python function that returns the sum of the even numbers in a list.",
+  "Explain in two sentences why a smaller language model can run faster on a GPU.",
+  "What is 17 multiplied by 23? Give the result and a brief calculation.",
+  "请用两句话解释为什么天空是蓝色的。",
+  "Translate into English: 这台电脑支持本地人工智能推理。",
+  "Return valid JSON with the keys name and count, values apple and 3.",
+  "Write a SQL query to find the three customers with the most orders.",
+  "Summarize this note: The meeting moved from Monday to Wednesday at 10 AM. Bring the revised budget.",
+  "All roses are flowers. Some flowers are red. Must every rose be red? Explain.",
+  "Compare a list and a tuple in Python using two short bullet points.",
+  "A train travels 120 kilometers in 90 minutes. What is its average speed in kilometers per hour?"
+]

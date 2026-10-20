@@ -1,0 +1,13 @@
+# First target: Qwen3.5-4B text decoder (vision is not exported by this adapter).
+# Source revision reviewed: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a.
+# Use a local snapshot at that commit for reproducibility; HF IDs follow upstream resolution.
+backend = "genai"
+source = "Qwen/Qwen3.5-4B"
+source_kind = "huggingface"
+output = "../artifacts/qwen35-4b-genai-int4"
+target = "ort-webgpu"
+runtime = "native"
+precision = "int4"
+activation_dtype = "fp16"
+block_size = 32
+graph_capture = false

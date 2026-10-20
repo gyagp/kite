@@ -1,0 +1,75 @@
+{
+  "images": [
+    {
+      "file": "earth.jpg",
+      "nasa_id": "PIA18033",
+      "title": "Earth",
+      "credit": "NASA",
+      "description": "Behold one of the more detailed images of the Earth yet created. This Blue Marble Earth montage shown above -- created from photographs taken by the Visible/Infrared Imager Radiometer Suite (VIIRS) instrument on board the new Suomi NPP satellite -- shows many stunning details of our home planet. The Suomi NPP satellite was launched last October and renamed last week after Verner Suomi, commonly deemed the father of satellite meteorology. The composite was created from the data collected during four orbits of the robotic satellite taken earlier this month and digitally projected onto the globe. Many features of North America and the Western Hemisphere are particularly visible on a high resolution version of the image.  http://photojournal.jpl.nasa.gov/catalog/PIA18033",
+      "source_url": "https://images.nasa.gov/details/PIA18033",
+      "download_url": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~medium.jpg",
+      "sha256": "ef9215baf2a58acc41b68c3629fd056dcf1b8760af5dbd00af87e156d38c75f8"
+    },
+    {
+      "file": "spacewalk.jpg",
+      "nasa_id": "S84-27031",
+      "title": "Views of the extravehicular activity during STS 41-B",
+      "credit": "NASA (see source description for full credit)",
+      "description": "S84-27031 (7 Feb 1984) --- Astronaut Bruce McCandless II, 41-B mission specialist, reaches a maximum distance from the Challenger before reversing direction his manned maneuvering unit (MMU) and returning to the Challenger.  A fellow crewmember inside the vehicle's cabin took this photograph with a 70mm camera.  The untethered EVA marked the first such experience for astronauts.",
+      "source_url": "https://images.nasa.gov/details/S84-27031",
+      "download_url": "https://images-assets.nasa.gov/image/S84-27031/S84-27031~medium.jpg",
+      "sha256": "c9e5a273e401f2d983777abcf897c442bc9454e4ace23700debf087b99750e40"
+    },
+    {
+      "file": "launch.jpg",
+      "nasa_id": "NHQ202211160030",
+      "title": "Artemis I Launch",
+      "credit": "NASA/Joel Kowsky",
+      "description": "NASA’s Space Launch System rocket carrying the Orion spacecraft launches on the Artemis I flight test, Wednesday, Nov. 16, 2022, from Launch Complex 39B at NASA’s Kennedy Space Center in Florida. NASA’s Artemis I mission is the first integrated flight test of the agency’s deep space exploration systems: the Orion spacecraft, Space Launch System (SLS) rocket, and ground systems. SLS and Orion launched at 1:47 a.m. EST, from Launch Pad 39B at the Kennedy Space Center. Photo Credit: (NASA/Joel Kowsky)",
+      "source_url": "https://images.nasa.gov/details/NHQ202211160030",
+      "download_url": "https://images-assets.nasa.gov/image/NHQ202211160030/NHQ202211160030~medium.jpg",
+      "sha256": "f6aa0b9554f85abc7321d6b5b58b26f8a85f331626723ca32cae155bd446e855"
+    },
+    {
+      "file": "saturn.jpg",
+      "nasa_id": "PIA14922",
+      "title": "Colorful Colossuses and Changing Hues",
+      "credit": "NASA/JPL-Caltech/Space Science Institute",
+      "description": "A giant of a moon appears before a giant of a planet undergoing seasonal changes in this natural color view of Titan and Saturn from NASA Cassini spacecraft.",
+      "source_url": "https://images.nasa.gov/details/PIA14922",
+      "download_url": "https://images-assets.nasa.gov/image/PIA14922/PIA14922~medium.jpg",
+      "sha256": "d3fa29832b4d076a3d6b9edb5337c8fc5a626a3c03aa32fbadc54e6909e18536"
+    },
+    {
+      "file": "pluto.jpg",
+      "nasa_id": "PIA19952",
+      "title": "The Rich Color Variations of Pluto",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute",
+      "description": "NASA's New Horizons spacecraft captured this high-resolution enhanced color view of Pluto on July 14, 2015. The image combines blue, red and infrared images taken by the Ralph/Multispectral Visual Imaging Camera (MVIC). Pluto's surface sports a remarkable range of subtle colors, enhanced in this view to a rainbow of pale blues, yellows, oranges, and deep reds. Many landforms have their own distinct colors, telling a complex geological and climatological story that scientists have only just begun to decode. The image resolves details and colors on scales as small as 0.8 miles (1.3 kilometers).  http://photojournal.jpl.nasa.gov/catalog/PIA19952",
+      "source_url": "https://images.nasa.gov/details/PIA19952",
+      "download_url": "https://images-assets.nasa.gov/image/PIA19952/PIA19952~medium.jpg",
+      "sha256": "5ea2c7e760b7a04f613aa6eaf41afe59a2bde2646fff85b4b5a6adfd6f4515c0"
+    },
+    {
+      "file": "horizon.jpg",
+      "nasa_id": "iss040e080833",
+      "title": "Earth Observation",
+      "credit": "NASA (see source description for full credit)",
+      "description": "Earth obsevation taken by the Expedition 40 crew aboard the International Space Station (ISS). Sunrise over Earth limb. Some Window reflections visible.",
+      "source_url": "https://images.nasa.gov/details/iss040e080833",
+      "download_url": "https://images-assets.nasa.gov/image/iss040e080833/iss040e080833~medium.jpg",
+      "sha256": "6407fcdb97eae5814b35047953030141cc01a2dd9ba322b7e20abda3efe91598"
+    }
+  ],
+  "usage_guidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "note": "NASA imagery is credited to its original creators. NASA does not endorse Kite. The film is an authored photo montage; narration is generated with Azure AI Speech. Playback and embedding inference run locally.",
+  "audio": {
+    "generated_utc": "2026-10-13T01:21:52.5044165Z",
+    "region": "japaneast",
+    "provider": "Azure AI Speech",
+    "transcript": "Mission control, look at that view. An astronaut is floating above the blue Earth, with white clouds far below.",
+    "sha256": "bfa1331694543b2aef18665f308916810f601e4236effcec30546fb62514ed7c",
+    "voice": "en-US-AvaMultilingualNeural",
+    "format": "riff-24khz-16bit-mono-pcm"
+  }
+}

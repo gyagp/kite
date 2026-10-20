@@ -1,0 +1,9 @@
+{
+    "generated_utc":  "2026-10-13T01:21:52.5044165Z",
+    "region":  "japaneast",
+    "provider":  "Azure AI Speech",
+    "transcript":  "Mission control, look at that view. An astronaut is floating above the blue Earth, with white clouds far below.",
+    "sha256":  "bfa1331694543b2aef18665f308916810f601e4236effcec30546fb62514ed7c",
+    "voice":  "en-US-AvaMultilingualNeural",
+    "format":  "riff-24khz-16bit-mono-pcm"
+}

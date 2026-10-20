@@ -1,0 +1,7 @@
+# Float baseline for comparison with the GenAI INT4 candidate.
+backend = "mobius"
+source = "Qwen/Qwen2.5-0.5B-Instruct"
+source_kind = "huggingface"
+output = "../artifacts/qwen25-0.5b-mobius-fp16"
+target = "ort-webgpu"
+precision = "fp16"

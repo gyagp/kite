@@ -1,0 +1,507 @@
+{
+  "source": "E:\\workspace\\project\\evo",
+  "revision": null,
+  "note": "Source directory has no git metadata. File hashes pin the imported implementation. Kite adaptations are tracked in this repository.",
+  "files": [
+    {
+      "source": "src/evo/analyze.py",
+      "destination": "evo/analyze.py",
+      "source_sha256": "00a8d966dcce891753dfa0333bc235e8f42b9adda971877815df597729797dbc"
+    },
+    {
+      "source": "src/evo/api.py",
+      "destination": "evo/api.py",
+      "source_sha256": "10578e3e22dd38777c14e3eef02e7b46f81a86d63b2313caecb9c0c781261766"
+    },
+    {
+      "source": "src/evo/backends.py",
+      "destination": "evo/backends.py",
+      "source_sha256": "1ff61034378fbf7b9d4f6c901467d1b05d14c95eeaa5a8773e0d51299bb9d037"
+    },
+    {
+      "source": "src/evo/benchmark.py",
+      "destination": "evo/benchmark.py",
+      "source_sha256": "e9764c54f8492e5bdd9f85fffc8cbafe5db8c0d2bfe887c72a06bcb3b58b6947"
+    },
+    {
+      "source": "src/evo/capabilities.py",
+      "destination": "evo/capabilities.py",
+      "source_sha256": "f8a1b47ff7c2f12d1f7fa5174f61e1b418bb49015f101d26c7ddff5e5bdb00f1"
+    },
+    {
+      "source": "src/evo/cli.py",
+      "destination": "evo/cli.py",
+      "source_sha256": "ec8de2702d86a491132af9a23d3377dc0e669e11e311502c36050f4bdf445184"
+    },
+    {
+      "source": "src/evo/config.py",
+      "destination": "evo/config.py",
+      "source_sha256": "48f70a625acfa3f8e5aebba802c38655471d8e52f6ac0ed9edff4ff6f4739080"
+    },
+    {
+      "source": "src/evo/contrib.py",
+      "destination": "evo/contrib.py",
+      "source_sha256": "5fff1f8c9021c738e54aad78f497fa3f89370d0a402a2048d43709f741c93d3e"
+    },
+    {
+      "source": "src/evo/contrib_rules.py",
+      "destination": "evo/contrib_rules.py",
+      "source_sha256": "c9e5c9938c3d8134d9ffe01d15ff65875b71c4b34faf72c743fe62bae20f2ebc"
+    },
+    {
+      "source": "src/evo/embed.py",
+      "destination": "evo/embed.py",
+      "source_sha256": "5d820b961b639796e24a889b05bf37595c6482aa2f4d11e712de1fa4bc90edb1"
+    },
+    {
+      "source": "src/evo/embedding_benchmark.py",
+      "destination": "evo/embedding_benchmark.py",
+      "source_sha256": "325d8daa958c69ae8ae45bb01a28110f4a073568416c15e72738e6f14c7cde56"
+    },
+    {
+      "source": "src/evo/embedding_export.py",
+      "destination": "evo/embedding_export.py",
+      "source_sha256": "2fc56562d5565b1d87a3e8c9393f83804257abafb240004179f4e01083264c3e"
+    },
+    {
+      "source": "src/evo/embedding_multimodal.py",
+      "destination": "evo/embedding_multimodal.py",
+      "source_sha256": "4481026cab5e833f7faeee0d100a24b0c211bfe61742f169946634995b6a18e8"
+    },
+    {
+      "source": "src/evo/embedding_multimodal_validate.py",
+      "destination": "evo/embedding_multimodal_validate.py",
+      "source_sha256": "127d164d9c08b8a4e642e96cc1287bdedfc2814c6329c2da9f6371840930b816"
+    },
+    {
+      "source": "src/evo/embedding_validate.py",
+      "destination": "evo/embedding_validate.py",
+      "source_sha256": "9942b6ed1272ca101f9922d83a6a66bddfd29dce8b135c47d0e2def63834f0f2"
+    },
+    {
+      "source": "src/evo/image_generate.py",
+      "destination": "evo/image_generate.py",
+      "source_sha256": "b5fae8e869f30d1f0d2abca4873ec79bbfcc6b147c86f5438bb85a8a6cdb0f53"
+    },
+    {
+      "source": "src/evo/image_gguf.py",
+      "destination": "evo/image_gguf.py",
+      "source_sha256": "f28ab5104a4fd31f1cb131f52be53de080cc4af4b9121e0fea19a101f2b01e02"
+    },
+    {
+      "source": "src/evo/image_optimize.py",
+      "destination": "evo/image_optimize.py",
+      "source_sha256": "df279ea8e8f4714025ad99dffaca6c214213299fa327a6bcbf4c01e09ea11d9f"
+    },
+    {
+      "source": "src/evo/image_prepare.py",
+      "destination": "evo/image_prepare.py",
+      "source_sha256": "51649a5ea85087af6aff3feae2ebbfac7904ca7406e1c5b38518213aac7e5713"
+    },
+    {
+      "source": "src/evo/image_projections.py",
+      "destination": "evo/image_projections.py",
+      "source_sha256": "a6b07328bc3e689a19fcf6fe09ae6f6f9431a047b1d52f13803d29eec8928337"
+    },
+    {
+      "source": "src/evo/image_qwen21.py",
+      "destination": "evo/image_qwen21.py",
+      "source_sha256": "0db80a888529b02cb24ea3820679cd071586e39a4959359ab80cf22bbfad086b"
+    },
+    {
+      "source": "src/evo/image_report.py",
+      "destination": "evo/image_report.py",
+      "source_sha256": "0cebb92f70aef3ffdb9c7b76ae52d443d495779caaa701f46b23e99dfba77fd4"
+    },
+    {
+      "source": "src/evo/inspect.py",
+      "destination": "evo/inspect.py",
+      "source_sha256": "3fa91a8c17e32bccd130dd31cbde5f45d4b4c82c858be12bff670b9f7b1a4090"
+    },
+    {
+      "source": "src/evo/measurement_guard.py",
+      "destination": "evo/measurement_guard.py",
+      "source_sha256": "277b59b0fad7215cb300bc7684b61c79ab9eee28e24eb1e2fe0584c4209a5336"
+    },
+    {
+      "source": "src/evo/mobius_backend.py",
+      "destination": "evo/mobius_backend.py",
+      "source_sha256": "2eb6100cc712286acb7f7160cda7dde778a0ac1614b962a0f171db941197584b"
+    },
+    {
+      "source": "src/evo/optimize.py",
+      "destination": "evo/optimize.py",
+      "source_sha256": "9454ef23a9e70546c1c9c0b48edd87f12377d6b9eb3ee7da570edf82cefbdd4b"
+    },
+    {
+      "source": "src/evo/pipeline.py",
+      "destination": "evo/pipeline.py",
+      "source_sha256": "6fc5b5b54b026e8a14c19128ecf0477252805cbfa518b6483554a27f9b1bdd55"
+    },
+    {
+      "source": "src/evo/profile.py",
+      "destination": "evo/profile.py",
+      "source_sha256": "11293f17c1755a3d493e332223713bfc9d618c28be6191e305914a4d13920a1b"
+    },
+    {
+      "source": "src/evo/quantize.py",
+      "destination": "evo/quantize.py",
+      "source_sha256": "fbd68bdcd11050cf5f0dba0a39bba35d532c4310e18b8801aafb9e7f6e070d27"
+    },
+    {
+      "source": "src/evo/qwen_gdn.py",
+      "destination": "evo/qwen_gdn.py",
+      "source_sha256": "ae57e9b79b4330524ac8a6fbbea36e45e2194596cda93c5be93f29e33b7c5409"
+    },
+    {
+      "source": "src/evo/runtime.py",
+      "destination": "evo/runtime.py",
+      "source_sha256": "82e7844c4793417e2dd0911e186c954e7b8127973d5169a52e1f04283caecefc"
+    },
+    {
+      "source": "src/evo/schemas.py",
+      "destination": "evo/schemas.py",
+      "source_sha256": "eabaf58383df4dabd51d255c45071eb5fcb4a20d9e7b7083930dcf1964124845"
+    },
+    {
+      "source": "src/evo/ui.py",
+      "destination": "evo/ui.py",
+      "source_sha256": "ee8c2bb2be21d5f59b881b0e684a5b8e51ad85f4b9e0866285e7fc58fcd518ee"
+    },
+    {
+      "source": "src/evo/validation.py",
+      "destination": "evo/validation.py",
+      "source_sha256": "30f8285069c54582e4bd0c02089ee806ff295b44d8d934e49a820c66fa38365d"
+    },
+    {
+      "source": "src/evo/workbench.py",
+      "destination": "evo/workbench.py",
+      "source_sha256": "ce912fa6fb645361e518eea77ae39562b3dc1e662870d077c3f62edf9afd7b73"
+    },
+    {
+      "source": "src/evo/__init__.py",
+      "destination": "evo/__init__.py",
+      "source_sha256": "ce5bbe30736f23d0a2ff3b223e326cdab56115bbd99411eb1c3744b85709cb81"
+    },
+    {
+      "source": "src/evo/__main__.py",
+      "destination": "evo/__main__.py",
+      "source_sha256": "d79468fffa83b072a3110ec6f22445298b5a0820b058de4ce0e2596e19b4b966"
+    },
+    {
+      "source": "src/evo/web/app.js",
+      "destination": "evo/web/app.js",
+      "source_sha256": "3516d15c14bc55c9121bd99e669d5dcf020fe76549355531b7729689ce704d4b"
+    },
+    {
+      "source": "src/evo/web/index.html",
+      "destination": "evo/web/index.html",
+      "source_sha256": "8654835cd7c45b07f0e4291be60e173cf59f7c478a55863f7405d7348c6acc8e"
+    },
+    {
+      "source": "src/evo/web/style.css",
+      "destination": "evo/web/style.css",
+      "source_sha256": "3dbc33c16a7c9d90e7320ba1704338e992e33cec30f3a23345747f7d734880eb"
+    },
+    {
+      "source": "docs/design.md",
+      "destination": "evo_resources/docs/design.md",
+      "source_sha256": "fa90984b68c59d24667eea150931ed5593845ab9634b49665d7380618610e525"
+    },
+    {
+      "source": "docs/embeddinggemma2-multimodal.md",
+      "destination": "evo_resources/docs/embeddinggemma2-multimodal.md",
+      "source_sha256": "3671f1713658b0a8f77d5faf4fd1f45de2dcb6c4a97eec614d40e6a65e728906"
+    },
+    {
+      "source": "docs/embeddinggemma2.md",
+      "destination": "evo_resources/docs/embeddinggemma2.md",
+      "source_sha256": "e485b2d4f413d1e33624ed0420de7614f7548af5c749a9063de74d05c615a847"
+    },
+    {
+      "source": "docs/fp16-state-results.md",
+      "destination": "evo_resources/docs/fp16-state-results.md",
+      "source_sha256": "fb5a8dbe18be6edb25468b6b75b5cfea600d514d2adf728364e45424ae07fbc4"
+    },
+    {
+      "source": "docs/model-authoring-improvements.md",
+      "destination": "evo_resources/docs/model-authoring-improvements.md",
+      "source_sha256": "646560e6f2dadf294560ae5d567aa71fb48048cd8e88d9feddc2a65d9e44adc7"
+    },
+    {
+      "source": "docs/native-runtime.md",
+      "destination": "evo_resources/docs/native-runtime.md",
+      "source_sha256": "596a5740d2b17a741157d30c344e26464bd4b6ff0b1f1d922db03ebfc1e833d3"
+    },
+    {
+      "source": "docs/optimization-coverage.md",
+      "destination": "evo_resources/docs/optimization-coverage.md",
+      "source_sha256": "f4b5bb423d925060a33afa076123d8abfb4133cd0cfa5698249c6833f09a61fa"
+    },
+    {
+      "source": "docs/previous-vs-evo.md",
+      "destination": "evo_resources/docs/previous-vs-evo.md",
+      "source_sha256": "b0351612d8cbb62e53442cc9a3ac7a9a7174101d1e820715b41007f4a9a7e50a"
+    },
+    {
+      "source": "docs/qwen-image21.md",
+      "destination": "evo_resources/docs/qwen-image21.md",
+      "source_sha256": "bc761cc264dcb54806beaa932fb55c3c5db4c2c54e32084d1afb3cd785da97e0"
+    },
+    {
+      "source": "docs/qwen35-optimization-v2.md",
+      "destination": "evo_resources/docs/qwen35-optimization-v2.md",
+      "source_sha256": "03b6bafdbd61a82ae7ab5b0d21b5cb8ba94bc75c018035ca5056cd15ef308a0b"
+    },
+    {
+      "source": "docs/qwen35-results.md",
+      "destination": "evo_resources/docs/qwen35-results.md",
+      "source_sha256": "dbd7e8931c51166825bbb7b6f3dc3b0fe5d7bec0be87f6d643f4bf6482d825d4"
+    },
+    {
+      "source": "docs/upstream-capabilities.json",
+      "destination": "evo_resources/docs/upstream-capabilities.json",
+      "source_sha256": "4ab136149456f9cf30e0eaa416621fe642796be07884ebdec346f79c5564cd22"
+    },
+    {
+      "source": "docs/upstream.md",
+      "destination": "evo_resources/docs/upstream.md",
+      "source_sha256": "c9d200c5768c8722c7ff2c8e27a7beaab423b95096892308b24dfdbd8c992ce8"
+    },
+    {
+      "source": "docs/verification.md",
+      "destination": "evo_resources/docs/verification.md",
+      "source_sha256": "506d984a62d36eb69d630fde4fefddce555184c840e107c4d87c02648c188246"
+    },
+    {
+      "source": "docs/workbench.md",
+      "destination": "evo_resources/docs/workbench.md",
+      "source_sha256": "a801b3fa8020b5522a7765caa55d2e123ea7184125de440075bbc6937d650c0b"
+    },
+    {
+      "source": "docs/models/qwen35-4b.md",
+      "destination": "evo_resources/docs/models/qwen35-4b.md",
+      "source_sha256": "faf417eb4bd35b0dd60bc2e477ff6eb36504e8cfaa9d2e9a29fef96bf08a45af"
+    },
+    {
+      "source": "recipes/bert-mobius-fp32.toml",
+      "destination": "evo_resources/recipes/bert-mobius-fp32.toml",
+      "source_sha256": "a5d84d57f8011944313bae84684e633c5bf2804e26415777477204e6752f6751"
+    },
+    {
+      "source": "recipes/qwen25-0.5b-genai-int4.toml",
+      "destination": "evo_resources/recipes/qwen25-0.5b-genai-int4.toml",
+      "source_sha256": "96c58acde48cc647a8526ad81409f71c3537114150cec3a4ad8f67454be43838"
+    },
+    {
+      "source": "recipes/qwen25-0.5b-mobius-fp16.toml",
+      "destination": "evo_resources/recipes/qwen25-0.5b-mobius-fp16.toml",
+      "source_sha256": "f2e22246e6fff82d3df9016cd00595425c49ac608097d083d6f867cebafbac34"
+    },
+    {
+      "source": "recipes/qwen35-4b-capture.toml",
+      "destination": "evo_resources/recipes/qwen35-4b-capture.toml",
+      "source_sha256": "13037057f706f7c9f266ca02e372e3d41c2279fa2e92b9385b77f77b3247ad9f"
+    },
+    {
+      "source": "recipes/qwen35-4b-fused-b128.toml",
+      "destination": "evo_resources/recipes/qwen35-4b-fused-b128.toml",
+      "source_sha256": "44826c76a2a49ba8ee1fb2607b896993cbd98256192f65cebf514eb17a14cbd9"
+    },
+    {
+      "source": "recipes/qwen35-4b-fused.toml",
+      "destination": "evo_resources/recipes/qwen35-4b-fused.toml",
+      "source_sha256": "759ab3698aa90daa4b4490c501caa50b30af8ca681d95ac1b1e1334fa0756bdc"
+    },
+    {
+      "source": "recipes/qwen35-4b-genai-int4.toml",
+      "destination": "evo_resources/recipes/qwen35-4b-genai-int4.toml",
+      "source_sha256": "bc3a9ef52bb275db52c5ac0354fb6871660766055551f7c1742743eaa96d4164"
+    },
+    {
+      "source": "recipes/qwen35-4b-recommended.toml",
+      "destination": "evo_resources/recipes/qwen35-4b-recommended.toml",
+      "source_sha256": "1143e1e46d2e4733f795cde20284cc6db028634528953e2a2e6baa125478dace"
+    },
+    {
+      "source": "recipes/qwen35-4b-webgfx-policy.toml",
+      "destination": "evo_resources/recipes/qwen35-4b-webgfx-policy.toml",
+      "source_sha256": "bab67ee662230a8ea92209d427d89d002a62143308b4de1c42b4b1816d2d5e23"
+    },
+    {
+      "source": "benchmarks/qwen-image-2.1-turbo-edit.json",
+      "destination": "evo_resources/benchmarks/qwen-image-2.1-turbo-edit.json",
+      "source_sha256": "b64867da41c81e629a4d1f068d55b7e7f4decf630ea04909731ba33af41c1e77"
+    },
+    {
+      "source": "benchmarks/qwen-image-2.1-turbo.json",
+      "destination": "evo_resources/benchmarks/qwen-image-2.1-turbo.json",
+      "source_sha256": "6b1a0900231c3c784263f3b7a0889ed202ac90cbb4874eb9611d03b20dbdbb2a"
+    },
+    {
+      "source": "benchmarks/qwen35-quality-prompts.json",
+      "destination": "evo_resources/benchmarks/qwen35-quality-prompts.json",
+      "source_sha256": "3cc9db7a1b4b281ee599f76d82d5ba120a4bf786b623433170668ee527cfe823"
+    },
+    {
+      "source": "benchmarks/qwen35-state-stress.json",
+      "destination": "evo_resources/benchmarks/qwen35-state-stress.json",
+      "source_sha256": "75b1fc328a523d0d228a1f2960735961cab0cfbd120c49bfbabaeda1e09fe0d2"
+    },
+    {
+      "source": "benchmarks/qwen35-text.json",
+      "destination": "evo_resources/benchmarks/qwen35-text.json",
+      "source_sha256": "e7df80447e9a5747b365b9937a611eeb47169d981600307384287446b6dab531"
+    },
+    {
+      "source": "benchmarks/qwen35-webgfx.json",
+      "destination": "evo_resources/benchmarks/qwen35-webgfx.json",
+      "source_sha256": "c3c261bbd21620633471c116e3f21dcd8388b40845fd592bbd92d63e562260f8"
+    },
+    {
+      "source": "requirements/embeddinggemma2-processing.txt",
+      "destination": "evo_resources/requirements/embeddinggemma2-processing.txt",
+      "source_sha256": "eddb4e461fe2f71dcd79c69835cdeabb1aa28e9517edb5fa5d5db40a875018b5"
+    },
+    {
+      "source": "requirements/qwen-image21.txt",
+      "destination": "evo_resources/requirements/qwen-image21.txt",
+      "source_sha256": "e433eb65b852c556c9ec99f58bd216de7e42815ee821f867b984995abd99dc04"
+    },
+    {
+      "source": "scripts/benchmark_interleaved.py",
+      "destination": "evo_resources/scripts/benchmark_interleaved.py",
+      "source_sha256": "7c906e9c76fd8af8255f0737c230a1acda4c8ba9078a04d16bc7777fc7ccb53e"
+    },
+    {
+      "source": "scripts/check_embeddinggemma_multimodal_files.py",
+      "destination": "evo_resources/scripts/check_embeddinggemma_multimodal_files.py",
+      "source_sha256": "d9d37e9df281aff771cba19dedc898a224adecc6ff77d85fafa7e0073f25b5a9"
+    },
+    {
+      "source": "scripts/check_gdn_kernel.py",
+      "destination": "evo_resources/scripts/check_gdn_kernel.py",
+      "source_sha256": "da25ca6189e954abf7618d635119fba409b0570c88ba50c7b9b1c723b8fc0665"
+    },
+    {
+      "source": "scripts/check_qwen_cached.py",
+      "destination": "evo_resources/scripts/check_qwen_cached.py",
+      "source_sha256": "a2c63af37aaef414f40d04aa275fee3b4df8777959929cc8ecbab3d382e33906"
+    },
+    {
+      "source": "scripts/check_qwen_generation.py",
+      "destination": "evo_resources/scripts/check_qwen_generation.py",
+      "source_sha256": "c825c4e214524b0f63357a002e6e979e665ba468746e124caa90903014ed6aee"
+    },
+    {
+      "source": "scripts/check_qwen_pair.py",
+      "destination": "evo_resources/scripts/check_qwen_pair.py",
+      "source_sha256": "3e5eac81d788b3fd4e21fc4d52bf2646e8cd42af90f2afa2aa88f35fd5c4afe3"
+    },
+    {
+      "source": "scripts/check_qwen_quality.py",
+      "destination": "evo_resources/scripts/check_qwen_quality.py",
+      "source_sha256": "721423674a9a6b644e0adfcfe7677a14b1d8c3b6585a389509f67e8fbdc22ef5"
+    },
+    {
+      "source": "scripts/package_webgpu.py",
+      "destination": "evo_resources/scripts/package_webgpu.py",
+      "source_sha256": "b0d155282e81609230a9440d3c67d4888920bc1485838a4ed2ab9b07866ea979"
+    },
+    {
+      "source": "scripts/prepare_benchmark.py",
+      "destination": "evo_resources/scripts/prepare_benchmark.py",
+      "source_sha256": "711bcac5bf0b842de02ff48b33cd7bc8e68eaf15c830cdf2c8bd59a9c5d8e2a2"
+    },
+    {
+      "source": "scripts/run_gdn_clean_comparison.py",
+      "destination": "evo_resources/scripts/run_gdn_clean_comparison.py",
+      "source_sha256": "f6e226b74036a85a4ddbac0de59419f1aa2f55923c7a709b2d8ddf4fdbf8ed36"
+    },
+    {
+      "source": "scripts/run_gdn_extended.py",
+      "destination": "evo_resources/scripts/run_gdn_extended.py",
+      "source_sha256": "f5d282f237dd7033c22342f07a65a9b752ab8e11f595096d767f51ce19cad34d"
+    },
+    {
+      "source": "scripts/run_latest_capture_validation.py",
+      "destination": "evo_resources/scripts/run_latest_capture_validation.py",
+      "source_sha256": "3b1a53d9a5c593f6c4e993dd9722de6f408260327b6d3fec840a958a429b69c5"
+    },
+    {
+      "source": "scripts/smoke_genai.py",
+      "destination": "evo_resources/scripts/smoke_genai.py",
+      "source_sha256": "2821483f7959e2d0e994586ac80a037c5a836f93784aa9ff47956e5a8f6f6c8b"
+    },
+    {
+      "source": "scripts/experiments/qwen_capture.py",
+      "destination": "evo_resources/scripts/experiments/qwen_capture.py",
+      "source_sha256": "2a21270470340da60d015c611e9125bdf213085dbd908a31fba3e4d6268adb46"
+    },
+    {
+      "source": "scripts/experiments/qwen_fp16_state.py",
+      "destination": "evo_resources/scripts/experiments/qwen_fp16_state.py",
+      "source_sha256": "e42c856ac16b1d739800462949fd1e03271ec9852e1adc1357fa1df18708b4c2"
+    },
+    {
+      "source": "tests/test_benchmark_artifacts.py",
+      "destination": "tests_evo/test_benchmark_artifacts.py",
+      "source_sha256": "67b83df2aadce2b567c7763d91794fccdcd6b4337fc5bdcd29c73fe89b0b7f62"
+    },
+    {
+      "source": "tests/test_contrib.py",
+      "destination": "tests_evo/test_contrib.py",
+      "source_sha256": "86eca422ff493834ddbfbbf7bd937a2b553bd3801ef3586f35dfa18a04835880"
+    },
+    {
+      "source": "tests/test_embedding_multimodal.py",
+      "destination": "tests_evo/test_embedding_multimodal.py",
+      "source_sha256": "51d75c1c35d1ac46690c7242348bf9141d708051bff32e40c4f8ef0d6a982a0e"
+    },
+    {
+      "source": "tests/test_evo.py",
+      "destination": "tests_evo/test_evo.py",
+      "source_sha256": "57b0b2bd00fee979c356c029fad529cc14c3abb9c1e55463eb67a6672d52a348"
+    },
+    {
+      "source": "tests/test_image_gguf.py",
+      "destination": "tests_evo/test_image_gguf.py",
+      "source_sha256": "ba5d41d6b1263bf14f28309511362ded33b1cca94de3cda1d3613e551564dea6"
+    },
+    {
+      "source": "tests/test_image_projections.py",
+      "destination": "tests_evo/test_image_projections.py",
+      "source_sha256": "e79212d0571bdb5fdf7b7c45f8d3c9c11b4c7b2e7150474b56ec50c797a410cd"
+    },
+    {
+      "source": "tests/test_image_qwen21.py",
+      "destination": "tests_evo/test_image_qwen21.py",
+      "source_sha256": "692f154f1e8909449acf2f00cd1c7064d78070d2f6c5fdc14acf170a62818a33"
+    },
+    {
+      "source": "tests/test_measurement_guard.py",
+      "destination": "tests_evo/test_measurement_guard.py",
+      "source_sha256": "bc03c36d314ceaa56db8c94fa72d78a529bcc85d7d74253ac120977bffde2fac"
+    },
+    {
+      "source": "tests/test_quantize.py",
+      "destination": "tests_evo/test_quantize.py",
+      "source_sha256": "67f0937b70cd107bf1aa84c20daaf8c824465b9da474e0673e1367d933afeb04"
+    },
+    {
+      "source": "tests/test_runtime.py",
+      "destination": "tests_evo/test_runtime.py",
+      "source_sha256": "2d8ae4bf6eaf5ecd0ae77573dec1b465a7662b2866c68a7b5262ced63c98d856"
+    },
+    {
+      "source": "tests/test_state_experiment.py",
+      "destination": "tests_evo/test_state_experiment.py",
+      "source_sha256": "a6d959d10febd9f7d2f9261f688d4f8885b8ce5fe8ebfcb3cbbe4dec76ea8646"
+    },
+    {
+      "source": "tests/test_workbench.py",
+      "destination": "tests_evo/test_workbench.py",
+      "source_sha256": "2f6da6ac939356ba79348e742afcd8d602f12cf5524b327a7e0f17e3cd92ad81"
+    }
+  ]
+}

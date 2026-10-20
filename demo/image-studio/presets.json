@@ -1,0 +1,51 @@
+[
+  {
+    "id": "sky-garden",
+    "title": "A city that forgot gravity",
+    "category": "World building",
+    "subtitle": "An impossible place. A very real local model.",
+    "prompt": "A breathtaking architectural photograph of a tiny futuristic botanical city floating inside a huge translucent blue glass sphere above white clouds. White sculptural buildings, lush miniature gardens, waterfalls falling into the sky, a single red origami kite flying beside the sphere. Morning sunlight, soft pastel blue and white, exquisite miniature details, premium cinematic composition, physically realistic materials.",
+    "seed": 42,
+    "width": 768,
+    "height": 768,
+    "preview": "sky-garden.png",
+    "provenance": "sky-garden.json"
+  },
+  {
+    "id": "kite-poster",
+    "title": "Let imagination take flight",
+    "category": "Typography",
+    "subtitle": "Give your ideas a headline. In two languages.",
+    "prompt": "A beautifully designed premium graphic poster on warm white paper. At the top large clear dark blue typography reads \"KITE\". Below it elegant Chinese typography reads \"想象起飞\". A giant sculptural folded cobalt blue paper kite floats above a miniature white futuristic city and flowing clouds. Small orange sun. Elegant Swiss editorial design, sophisticated layout, crisp typography, cinematic paper sculpture, lots of negative space.",
+    "seed": 7,
+    "width": 768,
+    "height": 1024,
+    "preview": "kite-poster.png",
+    "provenance": "kite-poster.json"
+  },
+  {
+    "id": "glasswing",
+    "title": "Objects from tomorrow",
+    "category": "Product studio",
+    "subtitle": "Light, material, and a little impossible engineering.",
+    "prompt": "Luxury product photography of a futuristic translucent cobalt blue glass and brushed silver camera, sculptural rounded shape, one oversized iridescent lens, tiny precision buttons. Floating diagonally above a white stone pedestal in a bright minimalist studio. Caustic light patterns on the surface, delicate soft shadows, a small orange accent. Ultra detailed optical glass, sophisticated editorial advertising, clean pale blue background, no text.",
+    "seed": 123,
+    "width": 768,
+    "height": 768,
+    "preview": "glasswing.png",
+    "provenance": "glasswing.json"
+  },
+  {
+    "id": "sketch-to-sea",
+    "title": "From a line to a world",
+    "category": "Image editing",
+    "subtitle": "Drag the divider. Watch a sketch become a photograph.",
+    "prompt": "Turn this boat sketch into a photograph of a white yacht on a calm blue sea under a clear sky.",
+    "seed": 42,
+    "width": 512,
+    "height": 512,
+    "reference": "boat-sketch.png",
+    "preview": "sketch-to-sea.png",
+    "provenance": "sketch-to-sea.json"
+  }
+]

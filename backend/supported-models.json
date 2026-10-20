@@ -1,0 +1,1869 @@
+{
+  "repository": "webai-community/ai-models",
+  "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab",
+  "models": [
+    {
+      "id": "cc83fa82f9f02b0c",
+      "name": "CodeLlama-7b-Instruct-hf",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 4053573774,
+      "precision": "mixed",
+      "context": 16384,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "CodeLlama-7b-Instruct-hf/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "CodeLlama-7b-Instruct-hf",
+        "path": "CodeLlama-7b-Instruct-hf/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "bd96f2a8780b4e14",
+      "name": "DeepSeek-R1-0528-Qwen3-8B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 5858977397,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "DeepSeek-R1-0528-Qwen3-8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "DeepSeek-R1-0528-Qwen3-8B",
+        "path": "DeepSeek-R1-0528-Qwen3-8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "07c242a908ef274d",
+      "name": "DeepSeek-R1-Distill-Llama-8B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 5586363485,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "DeepSeek-R1-Distill-Llama-8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "DeepSeek-R1-Distill-Llama-8B",
+        "path": "DeepSeek-R1-Distill-Llama-8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "933d44cd14e37dfe",
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1497222949,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "DeepSeek-R1-Distill-Qwen-1.5B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "DeepSeek-R1-Distill-Qwen-1.5B",
+        "path": "DeepSeek-R1-Distill-Qwen-1.5B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "295e4e52be24c712",
+      "name": "DeepSeek-R1-Distill-Qwen-7B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5386851053,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "DeepSeek-R1-Distill-Qwen-7B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "DeepSeek-R1-Distill-Qwen-7B",
+        "path": "DeepSeek-R1-Distill-Qwen-7B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "7ef682a24cee7f24",
+      "name": "EmbeddingGemma-2",
+      "path": "",
+      "kind": "embedding",
+      "architecture": "EmbeddingGemma2Model",
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "size": 1524359277,
+      "precision": "fp16",
+      "context": 8192,
+      "dimensions": 768,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "EmbeddingGemma-2/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "EmbeddingGemma-2",
+        "path": "EmbeddingGemma-2/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "c6e0882b5506af04",
+      "name": "Ministral-8B-Instruct-2410",
+      "path": "",
+      "kind": "chat",
+      "architecture": "mistral",
+      "modalities": [
+        "text"
+      ],
+      "size": 5577744972,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Ministral-8B-Instruct-2410/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Ministral-8B-Instruct-2410",
+        "path": "Ministral-8B-Instruct-2410/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "8f37d2d3f1f66221",
+      "name": "Mistral-7B-Instruct-v0.2",
+      "path": "",
+      "kind": "chat",
+      "architecture": "mistral",
+      "modalities": [
+        "text"
+      ],
+      "size": 4340497857,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Mistral-7B-Instruct-v0.2/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Mistral-7B-Instruct-v0.2",
+        "path": "Mistral-7B-Instruct-v0.2/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "8b428d59aac9fc2d",
+      "name": "Mistral-7B-Instruct-v0.3",
+      "path": "",
+      "kind": "chat",
+      "architecture": "mistral",
+      "modalities": [
+        "text"
+      ],
+      "size": 4350536778,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Mistral-7B-Instruct-v0.3/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Mistral-7B-Instruct-v0.3",
+        "path": "Mistral-7B-Instruct-v0.3/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "3d058741f07c2c86",
+      "name": "Mistral-Nemo-Instruct-2407",
+      "path": "",
+      "kind": "chat",
+      "architecture": "mistral",
+      "modalities": [
+        "text"
+      ],
+      "size": 8241353614,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Mistral-Nemo-Instruct-2407/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Mistral-Nemo-Instruct-2407",
+        "path": "Mistral-Nemo-Instruct-2407/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "8cd2c51acd84117e",
+      "name": "Nemotron-Cascade-8B-Thinking",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 5838261820,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Nemotron-Cascade-8B-Thinking/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Nemotron-Cascade-8B-Thinking",
+        "path": "Nemotron-Cascade-8B-Thinking/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "4b2e5ac73005e633",
+      "name": "Nemotron-Mini-4B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "nemotron",
+      "modalities": [
+        "text"
+      ],
+      "size": 3917243271,
+      "precision": "mixed",
+      "context": 4096,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Nemotron-Mini-4B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Nemotron-Mini-4B-Instruct",
+        "path": "Nemotron-Mini-4B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "4f466730a0c1dda0",
+      "name": "Phi-3-mini-128k-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "phi3",
+      "modalities": [
+        "text"
+      ],
+      "size": 2370871230,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Phi-3-mini-128k-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Phi-3-mini-128k-instruct",
+        "path": "Phi-3-mini-128k-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "8f99f6da10e33f9a",
+      "name": "Phi-3-mini-4k-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "phi3",
+      "modalities": [
+        "text"
+      ],
+      "size": 2345705303,
+      "precision": "mixed",
+      "context": 4096,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Phi-3-mini-4k-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Phi-3-mini-4k-instruct",
+        "path": "Phi-3-mini-4k-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "85f608af1b1b4173",
+      "name": "Phi-3.5-mini-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "phi3",
+      "modalities": [
+        "text"
+      ],
+      "size": 2370871253,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Phi-3.5-mini-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Phi-3.5-mini-instruct",
+        "path": "Phi-3.5-mini-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "36b820b866ad8a04",
+      "name": "Phi-4-mini-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "phi3",
+      "modalities": [
+        "text"
+      ],
+      "size": 2513515247,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Phi-4-mini-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Phi-4-mini-instruct",
+        "path": "Phi-4-mini-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "6a90d99206f8bcdc",
+      "name": "Phi-4-mini-reasoning",
+      "path": "",
+      "kind": "chat",
+      "architecture": "phi3",
+      "modalities": [
+        "text"
+      ],
+      "size": 2513515604,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Phi-4-mini-reasoning/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Phi-4-mini-reasoning",
+        "path": "Phi-4-mini-reasoning/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "87da2d0f554bf222",
+      "name": "Phi-4-multimodal-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "phi4mm",
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "size": 5139035859,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Phi-4-multimodal-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Phi-4-multimodal-instruct",
+        "path": "Phi-4-multimodal-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "9c4178713eb543ed",
+      "name": "Qwen2-0.5B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 369905646,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2-0.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2-0.5B-Instruct",
+        "path": "Qwen2-0.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "9c0eb32d7b614d1e",
+      "name": "Qwen2-1.5B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1009748792,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2-1.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2-1.5B-Instruct",
+        "path": "Qwen2-1.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "47bb15978df90679",
+      "name": "Qwen2-7B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5366123807,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2-7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2-7B-Instruct",
+        "path": "Qwen2-7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "e48509e28c10ebaf",
+      "name": "Qwen2.5-0.5B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 369916181,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-0.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-0.5B-Instruct",
+        "path": "Qwen2.5-0.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "3643813a05948f99",
+      "name": "Qwen2.5-1.5B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1009759326,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-1.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-1.5B-Instruct",
+        "path": "Qwen2.5-1.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "237a3cfa33d723dd",
+      "name": "Qwen2.5-3B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1919920630,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-3B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-3B-Instruct",
+        "path": "Qwen2.5-3B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "463df76514f2ef15",
+      "name": "Qwen2.5-7B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5366134342,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-7B-Instruct",
+        "path": "Qwen2.5-7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "1f36cbebd0433392",
+      "name": "Qwen2.5-Coder-0.5B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 369916181,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-Coder-0.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-Coder-0.5B-Instruct",
+        "path": "Qwen2.5-Coder-0.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "94eebfbb7958d8e0",
+      "name": "Qwen2.5-Coder-1.5B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1009759327,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-Coder-1.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-Coder-1.5B-Instruct",
+        "path": "Qwen2.5-Coder-1.5B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "000c251a86bd1ef2",
+      "name": "Qwen2.5-Coder-7B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5366134342,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen2.5-Coder-7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen2.5-Coder-7B-Instruct",
+        "path": "Qwen2.5-Coder-7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "94d884d1808e8938",
+      "name": "Qwen3-0.6B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 439901385,
+      "precision": "mixed",
+      "context": 40960,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3-0.6B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3-0.6B",
+        "path": "Qwen3-0.6B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "51f87b514410b051",
+      "name": "Qwen3-1.7B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 1150312084,
+      "precision": "mixed",
+      "context": 40960,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3-1.7B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3-1.7B",
+        "path": "Qwen3-1.7B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "29eaa7a21e542130",
+      "name": "Qwen3-4B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 2485963447,
+      "precision": "mixed",
+      "context": 40960,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3-4B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3-4B",
+        "path": "Qwen3-4B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "6201f379bac88d90",
+      "name": "Qwen3-8B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 5840358540,
+      "precision": "mixed",
+      "context": 40960,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3-8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3-8B",
+        "path": "Qwen3-8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "e5d1b53c9c75ecf3",
+      "name": "Qwen3.5-0.8B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3_5_text",
+      "modalities": [
+        "text"
+      ],
+      "size": 638957346,
+      "precision": "mixed",
+      "context": 262144,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3.5-0.8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3.5-0.8B",
+        "path": "Qwen3.5-0.8B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "4e0964f7f641753c",
+      "name": "Qwen3.5-2B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3_5_text",
+      "modalities": [
+        "text"
+      ],
+      "size": 1778854119,
+      "precision": "mixed",
+      "context": 262144,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3.5-2B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3.5-2B",
+        "path": "Qwen3.5-2B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "f34a79f154e799da",
+      "name": "Qwen3.5-4B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3_5_text",
+      "modalities": [
+        "text"
+      ],
+      "size": 3185189088,
+      "precision": "mixed",
+      "context": 262144,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3.5-4B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3.5-4B",
+        "path": "Qwen3.5-4B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "16e6bc1db759cce7",
+      "name": "Qwen3.5-9B",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3_5_text",
+      "modalities": [
+        "text"
+      ],
+      "size": 7096904976,
+      "precision": "mixed",
+      "context": 262144,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Qwen3.5-9B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Qwen3.5-9B",
+        "path": "Qwen3.5-9B/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "56978dbb019b90dd",
+      "name": "SOLAR-10.7B-Instruct-v1.0",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 6296474110,
+      "precision": "mixed",
+      "context": 4096,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SOLAR-10.7B-Instruct-v1.0/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SOLAR-10.7B-Instruct-v1.0",
+        "path": "SOLAR-10.7B-Instruct-v1.0/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "e4a75c68e7f43610",
+      "name": "SmolLM-1.7B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 1018425680,
+      "precision": "mixed",
+      "context": 2048,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SmolLM-1.7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SmolLM-1.7B-Instruct",
+        "path": "SmolLM-1.7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "d617e9d97711f96c",
+      "name": "SmolLM-135M-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 95197585,
+      "precision": "mixed",
+      "context": 2048,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SmolLM-135M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SmolLM-135M-Instruct",
+        "path": "SmolLM-135M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "a11d24e2b3ae2945",
+      "name": "SmolLM-360M-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 234083523,
+      "precision": "mixed",
+      "context": 2048,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SmolLM-360M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SmolLM-360M-Instruct",
+        "path": "SmolLM-360M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "7f91b507bb636ffe",
+      "name": "SmolLM2-1.7B-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 1019211913,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SmolLM2-1.7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SmolLM2-1.7B-Instruct",
+        "path": "SmolLM2-1.7B-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "bbcfb4ed7f6cc14d",
+      "name": "SmolLM2-135M-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 95984192,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SmolLM2-135M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SmolLM2-135M-Instruct",
+        "path": "SmolLM2-135M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "3d28c288a2b30651",
+      "name": "SmolLM2-360M-Instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 234870505,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "SmolLM2-360M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "SmolLM2-360M-Instruct",
+        "path": "SmolLM2-360M-Instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "7c88d4dd8c67ec47",
+      "name": "TinyLlama-1.1B-Chat-v1.0",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 750480669,
+      "precision": "mixed",
+      "context": 2048,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "TinyLlama-1.1B-Chat-v1.0/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "TinyLlama-1.1B-Chat-v1.0",
+        "path": "TinyLlama-1.1B-Chat-v1.0/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "6162f9a5da093d90",
+      "name": "Yi-1.5-6B-Chat",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 3926866059,
+      "precision": "mixed",
+      "context": 4096,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Yi-1.5-6B-Chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Yi-1.5-6B-Chat",
+        "path": "Yi-1.5-6B-Chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "18f6d5fd1d27c9eb",
+      "name": "Yi-1.5-9B-Chat",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 5484382699,
+      "precision": "mixed",
+      "context": 4096,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Yi-1.5-9B-Chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Yi-1.5-9B-Chat",
+        "path": "Yi-1.5-9B-Chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "8a0e7762bc6b1650",
+      "name": "Yi-Coder-1.5B-Chat",
+      "path": "",
+      "kind": "chat",
+      "architecture": "llama",
+      "modalities": [
+        "text"
+      ],
+      "size": 1126321197,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "Yi-Coder-1.5B-Chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "Yi-Coder-1.5B-Chat",
+        "path": "Yi-Coder-1.5B-Chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "b5da4df7f9866ff6",
+      "name": "aion",
+      "path": "",
+      "kind": "chat",
+      "architecture": "qwen3",
+      "modalities": [
+        "text"
+      ],
+      "size": 1510450379,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "aion/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "aion",
+        "path": "aion/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "28bbad6093622291",
+      "name": "gemma-2-2b-it",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gemma2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1813303135,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gemma-2-2b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gemma-2-2b-it",
+        "path": "gemma-2-2b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "55fa8c2eab3a9b9d",
+      "name": "gemma-2-9b-it",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gemma2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5702564261,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gemma-2-9b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gemma-2-9b-it",
+        "path": "gemma-2-9b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "14966ded5762de3d",
+      "name": "gemma-2b-it",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gemma",
+      "modalities": [
+        "text"
+      ],
+      "size": 1714988622,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gemma-2b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gemma-2b-it",
+        "path": "gemma-2b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "9d8672e3fe2f9735",
+      "name": "gemma-3-1b-it",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gemma3_text",
+      "modalities": [
+        "text"
+      ],
+      "size": 788444762,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gemma-3-1b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gemma-3-1b-it",
+        "path": "gemma-3-1b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "c52bd9706b5c4faf",
+      "name": "gemma-4-e2b-it",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gemma4",
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "size": 3464976327,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gemma-4-e2b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gemma-4-e2b-it",
+        "path": "gemma-4-e2b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "d5fcac47e31c863a",
+      "name": "gemma-7b-it",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gemma",
+      "modalities": [
+        "text"
+      ],
+      "size": 5238997035,
+      "precision": "mixed",
+      "context": 8192,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gemma-7b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gemma-7b-it",
+        "path": "gemma-7b-it/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "068d78e1f7160f3c",
+      "name": "gpt-oss-20b",
+      "path": "",
+      "kind": "chat",
+      "architecture": "gptoss",
+      "modalities": [
+        "text"
+      ],
+      "size": 12944968384,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "gpt-oss-20b/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "gpt-oss-20b",
+        "path": "gpt-oss-20b/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "82a03e987995da2b",
+      "name": "granite-3.1-2b-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "granite",
+      "modalities": [
+        "text"
+      ],
+      "size": 1497615051,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "granite-3.1-2b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "granite-3.1-2b-instruct",
+        "path": "granite-3.1-2b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "b4e754a68432b616",
+      "name": "granite-3.1-8b-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "granite",
+      "modalities": [
+        "text"
+      ],
+      "size": 4735952916,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "granite-3.1-8b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "granite-3.1-8b-instruct",
+        "path": "granite-3.1-8b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "931f97d58f90a23f",
+      "name": "granite-3.2-2b-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "granite",
+      "modalities": [
+        "text"
+      ],
+      "size": 1497615852,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "granite-3.2-2b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "granite-3.2-2b-instruct",
+        "path": "granite-3.2-2b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "be5482cea6722423",
+      "name": "granite-3.2-8b-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "granite",
+      "modalities": [
+        "text"
+      ],
+      "size": 4735953715,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "granite-3.2-8b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "granite-3.2-8b-instruct",
+        "path": "granite-3.2-8b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "5fe8136df5c9fc6d",
+      "name": "granite-3.3-2b-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "granite",
+      "modalities": [
+        "text"
+      ],
+      "size": 1497626132,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "granite-3.3-2b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "granite-3.3-2b-instruct",
+        "path": "granite-3.3-2b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "e920f41564a7ae04",
+      "name": "granite-3.3-8b-instruct",
+      "path": "",
+      "kind": "chat",
+      "architecture": "granite",
+      "modalities": [
+        "text"
+      ],
+      "size": 4735972189,
+      "precision": "mixed",
+      "context": 131072,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "granite-3.3-8b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "granite-3.3-8b-instruct",
+        "path": "granite-3.3-8b-instruct/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "bd96aedd9a4915b7",
+      "name": "internlm2-chat-1_8b",
+      "path": "",
+      "kind": "chat",
+      "architecture": "internlm2",
+      "modalities": [
+        "text"
+      ],
+      "size": 1450654245,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "internlm2-chat-1_8b/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "internlm2-chat-1_8b",
+        "path": "internlm2-chat-1_8b/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "aee096a22189b16c",
+      "name": "internlm2-chat-7b",
+      "path": "",
+      "kind": "chat",
+      "architecture": "internlm2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5108016570,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "internlm2-chat-7b/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "internlm2-chat-7b",
+        "path": "internlm2-chat-7b/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    },
+    {
+      "id": "93da3e01ca37c1b6",
+      "name": "internlm2_5-7b-chat",
+      "path": "",
+      "kind": "chat",
+      "architecture": "internlm2",
+      "modalities": [
+        "text"
+      ],
+      "size": 5108016570,
+      "precision": "mixed",
+      "context": 32768,
+      "dimensions": null,
+      "tasks": [],
+      "graphs": [],
+      "variant": "onnx-webgpu",
+      "available": false,
+      "source": {
+        "repository": "webai-community/ai-models",
+        "path": "internlm2_5-7b-chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      },
+      "download": {
+        "repository": "webai-community/ai-models",
+        "model": "internlm2_5-7b-chat",
+        "path": "internlm2_5-7b-chat/onnx-webgpu",
+        "revision": "82ff1a3bd221d7b42369eb4a0486251a6431bbab"
+      }
+    }
+  ]
+}

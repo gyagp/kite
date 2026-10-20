@@ -1,0 +1,14 @@
+backend = "genai"
+source = "../models/qwen35-4b"
+source_kind = "local"
+output = "../artifacts/qwen35-4b-capture"
+precision = "int4"
+activation_dtype = "fp16"
+block_size = 32
+graph_capture = true
+
+[genai_options]
+exclude_mtp = true
+prune_lm_head = true
+fuse_mlp_gate_up = true
+accuracy_level = 4
