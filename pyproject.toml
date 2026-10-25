@@ -11,6 +11,7 @@ requires-python = ">=3.11"
 dependencies = ["onnx>=1.18,<2"]
 
 [project.optional-dependencies]
+segmentation = ["numpy>=2", "Pillow>=11", "opencv-python-headless>=4.10", "imageio-ffmpeg>=0.6", "huggingface-hub>=0.30"]
 genai = [
   "onnxruntime-genai>=0.17.1,<0.18",
   "torch>=2.6",

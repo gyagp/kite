@@ -15,6 +15,7 @@ import {
   Square,
   X,
   WandSparkles,
+  ScanLine,
 } from 'lucide-react';
 import { api, errorText, streamJob } from './api';
 import { Badge, Spinner } from './components';
@@ -23,11 +24,13 @@ import { Embeddings } from './Embeddings';
 import { Chat } from './Chat';
 import { Models, Settings, ActivityPage } from './Workspace';
 import { ImageStudio } from './ImageStudio';
+import { SegmentationStudio } from './SegmentationStudio';
 
 const navigation = [
   { id: 'chat', name: 'Chat', icon: MessageSquare },
   { id: 'embeddings', name: 'Embeddings', icon: Layers3 },
   { id: 'images', name: 'Image Studio', icon: WandSparkles },
+  { id: 'segments', name: 'Video Segmentation', icon: ScanLine },
   { id: 'models', name: 'My models', icon: Box },
   { id: 'activity', name: 'Activity', icon: Activity },
 ] as const;
@@ -39,12 +42,17 @@ export default function App() {
     worker_running: false,
   });
   const [page, setPage] = useState<Page>(
-    window.location.hash === '#images' ? 'images' : 'embeddings',
+    window.location.hash === '#segments'
+      ? 'segments'
+      : window.location.hash === '#images'
+        ? 'images'
+        : 'embeddings',
   );
   const [error, setError] = useState('');
   const [connecting, setConnecting] = useState(true);
   const [working, setWorking] = useState(false);
   const [imageJobActive, setImageJobActive] = useState(false);
+  const [trackingJobActive, setTrackingJobActive] = useState(false);
   const [progress, setProgress] = useState('');
   const [thread, setThread] = useState<Thread | null>(null);
   const [chatKey, setChatKey] = useState(0);
@@ -78,6 +86,7 @@ export default function App() {
     executing.current = true;
     setWorking(true);
     setImageJobActive(data.kind === 'image');
+    setTrackingJobActive(data.kind === 'track');
     setError('');
     setProgress('Preparing the local runtime…');
     let result: Metrics | undefined;
@@ -92,6 +101,8 @@ export default function App() {
         if (event.type === 'delta') setProgress('Generating locally…');
         if (event.type === 'image_progress')
           setProgress(`Denoising step ${event.completed} of ${event.total}`);
+        if (event.type === 'tracking_progress')
+          setProgress(`Tracking frame ${event.completed} of ${event.total}`);
         if (event.type === 'result') result = event.data;
         if (event.type === 'error') failure = event.message || 'Inference failed.';
         onEvent?.(event);
@@ -105,6 +116,7 @@ export default function App() {
       executing.current = false;
       setWorking(false);
       setImageJobActive(false);
+      setTrackingJobActive(false);
       setProgress('');
       await refresh().catch(() => {});
     }
@@ -283,6 +295,18 @@ export default function App() {
         ) : (
           <>
             <main className={`page-content page-${page}`}>
+              {(page === 'segments' || trackingJobActive) && (
+                <div hidden={page !== 'segments'}>
+                  <SegmentationStudio
+                    models={boot.models.filter((m) => m.kind === 'segmentation')}
+                    execute={execute}
+                    busy={busy}
+                    notify={setError}
+                    onStop={stop}
+                    onModels={() => setPage('models')}
+                  />
+                </div>
+              )}
               {(page === 'images' || imageJobActive) && (
                 <div hidden={page !== 'images'}>
                   <ImageStudio execute={execute} busy={busy} notify={setError} onStop={stop} />
@@ -329,6 +353,8 @@ export default function App() {
                       api('/api/images/config', 'POST', { package: m.path })
                         .then(() => setPage('images'))
                         .catch((e) => setError(errorText(e)));
+                    } else if (m.kind === 'segmentation') {
+                      setPage('segments');
                     } else if (m.kind === 'chat') {
                       setPreferredChat(m.id);
                       newChat();

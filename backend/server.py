@@ -172,6 +172,30 @@ class Handler(BaseHTTPRequestHandler):
 
     def route(self, method, path):
         service = self.service
+        if method == "POST" and path == "/api/segments/sample":
+            self.body()
+            sample = PROJECT / "demo/segmentation/bedroom.mp4"
+            return self.json(
+                upload(
+                    service,
+                    {
+                        "name": "SAM 3 · Jumping together.mp4",
+                        "data": base64.b64encode(sample.read_bytes()).decode("ascii"),
+                    },
+                )
+            )
+        if method == "GET" and path == "/api/segments":
+            return self.json(service.store.list("segments"))
+        if method == "GET" and path.startswith("/api/segments/"):
+            parts = path.split("/")
+            record = service.store.get("segments", parts[3]) if len(parts) == 5 else None
+            name = parts[-1]
+            if not record or not re.fullmatch(
+                r"(?:overlay\.mp4|masks\.mp4|masks\.zip|result\.json|source\.png|mask-\d{5}\.png|frame-\d{5}\.jpg)",
+                name,
+            ):
+                raise ValueError("Unknown tracking artifact.")
+            return self.file(Path(record["directory"]) / name)
         if path == "/api/images/config":
             if method == "POST":
                 if service.active:

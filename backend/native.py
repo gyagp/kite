@@ -455,13 +455,20 @@ def main():
         try:
             request = json.loads(line)
             if request["command"] == "load":
-                engine = Engine(request)
+                if request["model"]["kind"] == "segmentation":
+                    from backend.sam3 import Sam3Engine
+
+                    engine = Sam3Engine(request)
+                else:
+                    engine = Engine(request)
             elif engine is None:
                 raise ValueError("Load a model before inference.")
             elif request["command"] == "embed":
                 engine.embed(request)
             elif request["command"] == "chat":
                 engine.chat(request)
+            elif request["command"] == "track":
+                engine.track(request)
             elif request["command"] == "finish_profile":
                 engine.finish_profile()
             else:

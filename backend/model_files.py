@@ -36,7 +36,12 @@ def delete_package(model, confirmation, *, project, evo, data_directory, other_m
         raise ValueError("Cannot delete a workspace, model collection, or runtime directory.")
     if not root.is_dir() or not any(
         (root / name).is_file()
-        for name in ("genai_config.json", "embedding_config.json", "image_config.json")
+        for name in (
+            "genai_config.json",
+            "embedding_config.json",
+            "image_config.json",
+            "segmentation_config.json",
+        )
     ):
         raise ValueError(
             "This directory no longer looks like a model package. Remove the library reference instead."

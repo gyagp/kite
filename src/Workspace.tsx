@@ -156,6 +156,7 @@ export function Models({
             ['chat', 'Chat'],
             ['embedding', 'Embeddings'],
             ['image', 'Images'],
+            ['segmentation', 'Segmentation'],
           ].map(([id, label]) => (
             <button
               key={id}
@@ -225,7 +226,9 @@ export function Models({
                   ? 'EMBEDDINGS'
                   : m.kind === 'image'
                     ? 'IMAGE GENERATION'
-                    : 'CHAT'}
+                    : m.kind === 'segmentation'
+                      ? 'VIDEO TRACKING'
+                      : 'CHAT'}
               </Badge>
               <Badge>{m.precision.toUpperCase()}</Badge>
               {m.modalities.map((v) => (
@@ -252,16 +255,20 @@ export function Models({
                 <dt>
                   {m.kind === 'image'
                     ? 'Generation'
-                    : m.dimensions
-                      ? 'Vector size'
-                      : 'Model context'}
+                    : m.kind === 'segmentation'
+                      ? 'Tracking'
+                      : m.dimensions
+                        ? 'Vector size'
+                        : 'Model context'}
                 </dt>
                 <dd>
                   {m.kind === 'image'
                     ? '8-step diffusion'
-                    : m.dimensions
-                      ? `${m.dimensions} dimensions`
-                      : `${(m.context / 1024).toFixed(0)}K tokens`}
+                    : m.kind === 'segmentation'
+                      ? 'Points · boxes · video'
+                      : m.dimensions
+                        ? `${m.dimensions} dimensions`
+                        : `${(m.context / 1024).toFixed(0)}K tokens`}
                 </dd>
               </div>
               <div>
@@ -282,7 +289,9 @@ export function Models({
                     ? 'Available on Hugging Face'
                     : m.kind === 'image'
                       ? 'Native image pipeline'
-                      : 'Local GenAI package'}
+                      : m.kind === 'segmentation'
+                        ? 'Native SAM 3 video pipeline'
+                        : 'Local GenAI package'}
                 </>
               )}
             </div>
@@ -296,13 +305,13 @@ export function Models({
                     className="button subtle"
                     disabled={busy || !m.available}
                     onClick={() =>
-                      m.kind === 'image'
+                      m.kind === 'image' || m.kind === 'segmentation'
                         ? onUse(m)
                         : execute({ kind: 'load', model: m.id }).catch(() => {})
                     }
                   >
                     {status.loaded?.model === m.id ? <Check size={14} /> : <Cpu size={14} />}
-                    {m.kind === 'image' ? 'Studio' : 'Load'}
+                    {m.kind === 'image' || m.kind === 'segmentation' ? 'Studio' : 'Load'}
                   </button>
                   <button
                     className="button primary"
@@ -916,6 +925,7 @@ export function ActivityPage({
                       search: 'Semantic search',
                       embed: 'Embedding',
                       image: 'Image generation',
+                      track: 'Video tracking',
                       tool: 'Tool run',
                     }[r.kind] || r.kind}
                   </td>

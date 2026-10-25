@@ -49,3 +49,6 @@ optimization workspaces does not require another confirmation.
 
 Qwen-Image optimization workspace:
 `E:/workspace/project/ws-ort/ort-prs/qwen-image`.
+
+SAM 3 video optimization workspace:
+`E:/workspace/project/ws-ort/ort-prs/sam3`.

@@ -130,6 +130,19 @@ class Service:
                 except (ValueError, OSError) as exc:
                     self.stderr.append(f"Image package is not ready: {exc}")
 
+        # SAM 3 was explicitly requested. Import its installed package once,
+        # preserving custom packages and subsequent library removals.
+        if not self.store.get("private", "sam3-video-v1"):
+            package = Path(self.settings["asset_root"]) / "artifacts/sam3-video-onnx"
+            existing = any(m.get("architecture") == "Sam3TrackerVideo" for m in self.models())
+            if existing or (package / "segmentation_config.json").is_file():
+                try:
+                    if not existing:
+                        self.store.put("models", inspect_package(package))
+                    self.store.put("private", {"id": "sam3-video-v1", "imported": True})
+                except (ValueError, OSError) as exc:
+                    self.stderr.append(f"SAM 3 package is not ready: {exc}")
+
     @property
     def settings(self):
         return self.store.get("settings", "default")
@@ -324,6 +337,9 @@ class Service:
             except queue.Empty:
                 continue
             kind = event["type"]
+            if job.kind == "track" and kind in ("tracking_progress", "status"):
+                # Long clips can exceed ten minutes while still making progress.
+                deadline = time.monotonic() + 600
             if kind == "eof":
                 if job.cancelled.is_set():
                     raise CancelledError()
@@ -387,13 +403,19 @@ class Service:
         if kind == "tool":
             tool_request(data)
             return {"id": "tool:" + data["operation"]}
-        if kind not in ("load", "embed", "search", "chat"):
+        if kind not in ("load", "embed", "search", "chat", "track"):
             raise ValueError("Unknown job kind.")
         model = self.store.get("models", data.get("model", ""))
         if not model:
             raise ValueError("Select an imported model.")
         # Re-inspect every load/request so stale registry data cannot hide removed graphs.
         model = {**inspect_package(model["path"]), "id": model["id"]}
+        if kind == "track":
+            from .segmentation import validate_tracking
+
+            if model["kind"] != "segmentation":
+                raise ValueError("Choose a SAM 3 video model.")
+            data["tracking_request"] = validate_tracking(self, data)
         if kind == "load" and model["kind"] == "image":
             raise ValueError(
                 "Open Image Studio to generate. Its CUDA and WebGPU stages load and release separately."
@@ -566,6 +588,23 @@ class Service:
             setup_ms = (time.perf_counter() - started) * 1000 if job.model_load_ms > 0 else 0.0
             if job.kind == "load":
                 job.result = self.loaded
+            elif job.kind == "track":
+                folder = self.image_directory.parent / "segments" / job.id
+                folder.mkdir(parents=True)
+                self.store.put(
+                    "segments", {"id": job.id, "directory": str(folder), "status": "running"}
+                )
+                job.result = self._exchange(
+                    {
+                        "command": "track",
+                        "id": job.id,
+                        "directory": str(folder),
+                        **data["tracking_request"],
+                    },
+                    job,
+                )
+                job.result["model_load_ms"] = job.model_load_ms
+                job.result["setup_ms"] = setup_ms
             elif job.kind == "search":
                 job.emit({"type": "status", "message": "Embedding the query and documents…"})
                 query = self._exchange(
@@ -677,6 +716,20 @@ class Service:
                         model_load_ms=job.model_load_ms,
                     )
                 )
+            if job.kind == "track":
+                job.result["request_ms"] = (time.perf_counter() - started) * 1000
+                self.store.put(
+                    "segments",
+                    {
+                        "id": job.id,
+                        "directory": str(folder),
+                        "status": "completed",
+                        "result": job.result,
+                    },
+                )
+                (folder / "result.json").write_text(
+                    json.dumps(job.result, indent=2), encoding="utf-8"
+                )
             job.status = "completed"
             job.emit({"type": "result", "data": job.result})
         except CancelledError:
@@ -690,6 +743,10 @@ class Service:
             with self.lock:
                 self._terminate()
         finally:
+            if job.kind == "track" and job.status != "completed":
+                record = self.store.get("segments", job.id)
+                if record:
+                    self.store.put("segments", {**record, "status": job.status, "error": job.error})
             if job.kind == "chat" and job.result is None:
                 latest = next(
                     (e["data"] for e in reversed(job.events) if e["type"] == "metrics"), None

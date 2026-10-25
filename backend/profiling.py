@@ -47,7 +47,12 @@ def finish_profile(directory, job_id, kind):
         "traces": traces,
         "warnings": warnings,
         "summary_url": f"/api/profiles/{job_id}/profile.json",
-        "scope": f"{kind.capitalize()} profile from a fresh model load. Includes preprocessing, prefill/decode or embedding execution in the run metrics. CPU operator times include dispatch and waits; do not add them to GPU times. Profiling adds overhead. The profiled worker is released after this run.",
+        "scope": (
+            "SAM 3 video profile from a fresh model load. Session traces cover vision encoding, mask decoding, memory encoding, and memory attention. "
+            if kind == "track"
+            else f"{kind.capitalize()} profile from a fresh model load. Includes preprocessing, prefill/decode or embedding execution in the run metrics. "
+        )
+        + "CPU operator times include dispatch and waits; do not add them to GPU times. Profiling adds overhead. The profiled worker is released after this run.",
     }
     (directory / "profile.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     return report

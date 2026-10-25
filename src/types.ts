@@ -1,9 +1,16 @@
-export type Page = 'chat' | 'embeddings' | 'models' | 'activity' | 'settings' | 'images';
+export type Page =
+  | 'chat'
+  | 'embeddings'
+  | 'models'
+  | 'activity'
+  | 'settings'
+  | 'images'
+  | 'segments';
 export type Model = {
   id: string;
   name: string;
   path: string;
-  kind: 'embedding' | 'chat' | 'image';
+  kind: 'embedding' | 'chat' | 'image' | 'segmentation';
   architecture: string;
   modalities: string[];
   size: number;

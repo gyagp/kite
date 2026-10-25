@@ -65,6 +65,11 @@ does not install a replacement ORT wheel, rebuild ORT, or modify Evo.
 
 ## Workspaces
 
+- **Video Segmentation:** SAM 3 tracks objects across video frames from include/
+  exclude points and boxes. Supports four objects, live mask previews, cancellation,
+  phase timings, profiling, and automatically saved overlay videos and lossless
+  label masks. [Setup, usage, and validation](docs/sam3.md).
+
 - **Image Studio:** generate and edit images with Qwen-Image. Each saved image has
   an end-to-end timing breakdown with phase percentages, the largest phase,
   model setup, verification, execution, saving, and remaining overhead. New runs

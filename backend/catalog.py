@@ -16,6 +16,11 @@ def inspect_package(path):
     root = Path(path).expanduser().resolve()
     if not root.is_dir():
         raise ValueError("Choose an existing model package directory.")
+    segmentation = read_json(root / "segmentation_config.json")
+    if segmentation:
+        from .segmentation import inspect_segmentation
+
+        return inspect_segmentation(root, segmentation)
     image = read_json(root / "image_config.json")
     if image:
         if image.get("task") != "image-generation":
@@ -50,7 +55,7 @@ def inspect_package(path):
     genai = read_json(root / "genai_config.json")
     if not embedding and not genai:
         raise ValueError(
-            "The directory needs embedding_config.json or genai_config.json, plus its ONNX files and tokenizer."
+            "Choose a package with embedding_config.json, genai_config.json, image_config.json, or segmentation_config.json and its model files."
         )
     if not (root / "tokenizer.json").is_file():
         raise ValueError("The package is missing tokenizer.json.")
@@ -160,7 +165,12 @@ def discover(root):
     for folder in [root, *sorted(p for p in root.iterdir() if p.is_dir())]:
         if not any(
             (folder / name).exists()
-            for name in ("embedding_config.json", "genai_config.json", "image_config.json")
+            for name in (
+                "embedding_config.json",
+                "genai_config.json",
+                "image_config.json",
+                "segmentation_config.json",
+            )
         ):
             continue
         try:
